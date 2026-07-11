@@ -144,7 +144,7 @@ footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px
 
 <script>
 const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;");
-const GTAG = {"VERBATIM-ARCHIVED":"good","VERBATIM-QUOTED":"acc","REPORTED":"warn","PENDING-TRANSCRIPTION":"warn"};
+const GTAG = {"VERBATIM-ARCHIVED":"good","VERBATIM-QUOTED":"acc","REPORTED":"warn","PENDING-TRANSCRIPTION":"warn","VERBATIM-LIVE":"good"};
 fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
   document.getElementById("keydates").textContent = "2018 reference dates: " + D.key_dates_2018 + ".";
   document.getElementById("items-out").innerHTML = D.items.map(it=>`
@@ -153,6 +153,7 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
         <span class="d">#${it.n} · ${esc(it.date)} · ${esc(it.time)}</span>
         <span class="tag ${GTAG[it.grade]||"warn"}">${esc(it.grade)}</span>
         ${it.contextual?'<span class="tag">contextual / periphery</span>':""}
+        ${it.live_status?`<span class="tag ${it.live_status.startsWith("live")?"good":"bad"}" title="${esc(it.live_status)}">${it.live_status.startsWith("live")?"still live on X":"deleted from X"}</span>`:""}
         <span class="ty">${esc(it.type)}</span>
       </header>
       ${it.text!==null?`<blockquote>${esc(it.text)}</blockquote>`:`<blockquote class="pend">[ Text pending transcription — the owner-captured archive snapshot below is the only known copy; open it to read the post. ]</blockquote>`}

@@ -7,7 +7,8 @@
     "VERBATIM-ARCHIVED": "The actual archived tweet page/JSON was retrieved and read",
     "VERBATIM-QUOTED": "Quoted verbatim in a credible article whose text was retrieved",
     "REPORTED": "Described but not quoted — no item in this ledger carries this grade",
-    "PENDING-TRANSCRIPTION": "Owner-captured archive.today snapshot exists but has not yet been transcribed by a human (archive.today blocks automated readers; the Wayback Machine has no capture)"
+    "PENDING-TRANSCRIPTION": "Owner-captured archive.today snapshot exists but has not yet been transcribed by a human (archive.today blocks automated readers; the Wayback Machine has no capture)",
+    "VERBATIM-LIVE": "Read directly from the live post on X on the stated date; no archival copy exists yet, so the entry depends on the post staying up until snapshotted"
   },
   "key_dates_2018": "Initial confirmation hearings Sept 4–7 · Ford's allegation reported anonymously Sept 12–14 · Ford identified publicly Sept 16 (Washington Post) · Ford–Kavanaugh hearing Sept 27 · supplemental FBI inquiry Sept 28–Oct 4 · Collins floor speech Oct 5 · confirmation vote Oct 6, 2018",
   "items": [
@@ -48,6 +49,7 @@
       "text": "The orchestrated smearing of a good man to make the public believe he's a sexual predator (when he isn't) is yes, a monstrous evil.",
       "context": "Reply to user @fcpcolo, who had replied to item 4: 'The sexual predator you're ok with. It's the female victims of sexual assault that are monstrous evil?' Independently corroborated verbatim by NBC News, June 11, 2026 (Natasha Korecki).",
       "status_url": "https://x.com/lyndseyfifield/status/1044063356305502215",
+      "live_status": "live on X — checked 2026-07-11",
       "evidence": [
         {"label": "Same archived permalink page as item 4", "url": "https://web.archive.org/web/20210107052754/https://twitter.com/lyndseyfifield/status/1044062142037667840"},
         {"label": "NBC News corroboration (Jun 11, 2026)", "url": "https://www.nbcnews.com/politics/2026-election/supreme-court-justice-brett-kavanaugh-maine-senate-race-susan-collins-rcna349070"}
@@ -59,6 +61,7 @@
       "text": "It doesn't matter if *I* think they're liars—every single person either of them have named as witnesses and everyone present at the events they described—including her best friend—ALL categorically and fully deny Kavanaugh did what was described.",
       "context": "Posted 23 minutes after item 5, in the same exchange with @fcpcolo, the day after The New Yorker published Deborah Ramirez's allegation. The Wayback Machine has no capture of this status; the owner-captured archive.today snapshot (read 2026-07-11, original URL confirmed on the snapshot page) is the only known copy.",
       "status_url": "https://x.com/lyndseyfifield/status/1044069060655423488",
+      "live_status": "live on X — checked 2026-07-11",
       "archive_today": ["https://archive.ph/lL94k"],
       "evidence": [],
       "grade": "VERBATIM-ARCHIVED", "owner_pick": true,
@@ -73,6 +76,7 @@
       "text": "Coincidence these activist professors who everyone—including their best friends from the time—say are lying and one accuser who herself admitted she doesn't actually remember it was him. And bringing these smears up now? This is nakedly political and you are blindly partisan.",
       "context": "Discovered during transcription: an owner-provided archive link supplied for a different status resolved to this tweet (each archive.today snapshot displays its original URL, which is how the mapping was corrected). Posted the morning after the Ramirez allegation published, 28 minutes before item 8.",
       "status_url": "https://x.com/lyndseyfifield/status/1044186483412881409",
+      "live_status": "live on X — checked 2026-07-11",
       "archive_today": ["https://archive.ph/Xfm9I"],
       "evidence": [],
       "grade": "VERBATIM-ARCHIVED", "owner_pick": true,
@@ -95,6 +99,7 @@
       "text": "I will personally lead the riots if they get away with this.",
       "context": "The quoted post (shown in the snapshot) is Norah O'Donnell relaying a CBS exchange in which Jane Mayer — co-author of The New Yorker's Ramirez story — is asked about the story's corroborating witness: 'But did he see it? — No. As I've said, he heard it from someone who was there.' No Wayback capture exists; the owner-captured archive.today snapshot (read 2026-07-11, original URL confirmed) is the only known copy.",
       "status_url": "https://x.com/lyndseyfifield/status/1044242914665275392",
+      "live_status": "live on X — checked 2026-07-11",
       "archive_today": ["https://archive.ph/KtavQ"],
       "evidence": [],
       "grade": "VERBATIM-ARCHIVED", "owner_pick": true,
@@ -105,19 +110,26 @@
       }
     },
     {
-      "n": 10, "date": "2018-09-24", "time": "18:20 UTC (2:20 p.m. EDT)", "type": "Post — owner-flagged; no recovered copy yet",
-      "text": null,
-      "context": "Owner-flagged status with no recovered copy: the Wayback Machine has no capture, and the archive.today links initially provided alongside this ID resolved to other tweets (now items 9 and 11 — each snapshot page displays its original URL, which corrected the mapping). If the post is still live, an archive.today snapshot would complete this entry. Its content is unknown and nothing is asserted about it.",
+      "n": 10, "date": "2018-09-24", "time": "18:20 UTC (2:20 p.m. EDT)", "type": "Original standalone tweet (live page shows no reply context)",
+      "text": "If this grotesque circus thrust upon us by @SenateDems and their craven allies in the media teaches us nothing at all, can it PLEASE open up a conversation about how we share screenshots of text/emails/statements? Some of y'all need Jesus.",
+      "context": "Owner-flagged status recovered from the LIVE post on X, read 2026-07-11 — the only recovery path left after the Wayback Machine came up empty and the provided archive links resolved to other tweets. This is the one item still needing an archival snapshot; until then the entry depends on the post staying up.",
       "status_url": "https://x.com/lyndseyfifield/status/1044290567608389637",
+      "live_status": "live on X — checked 2026-07-11",
       "archive_today": [],
       "evidence": [],
-      "grade": "PENDING-TRANSCRIPTION", "owner_pick": true, "analysis": null
+      "grade": "VERBATIM-LIVE", "owner_pick": true,
+      "analysis": {
+        "about": "Posted mid-afternoon amid the Sept 24 exchanges. The frame is the confirmation fight ('this grotesque circus thrust upon us by @SenateDems and their craven allies in the media'); the surface subject is a complaint about how people were sharing screenshots of texts, emails, and statements — a day when statements and purported evidence circulated widely as screenshots. 'Some of y'all need Jesus' is joking exasperation.",
+        "purpose": "A wry aside layered on her underlying position: the literal ask is about screenshot-sharing habits, while the framing restates who she holds responsible for the 'circus' — Senate Democrats and the media.",
+        "confidence": "HIGH on text and framing; MEDIUM on which specific screenshot-sharing incident prompted it (not visible from the post alone)."
+      }
     },
     {
       "n": 11, "date": "2018-09-24", "time": "19:51 UTC (3:51 p.m. EDT)", "type": "Reply to @JustinBeagley (thread with @OKClisamarie, @luvman33wife, @ladywolf6700, @SenateDems)",
       "text": "Yes, I do. Everyone keeps freaking out over this detail - it is most likely a family calendar that shows when he was out of the country. Unclutch your pearls you psycho.",
       "context": "Discovered during transcription: an owner-provided archive link supplied for a different status resolved to this tweet. The subject is Kavanaugh's 1982 calendars, submitted to the Judiciary Committee and widely reported Sept 23–24, 2018.",
       "status_url": "https://x.com/lyndseyfifield/status/1044313347703930880",
+      "live_status": "live on X — checked 2026-07-11",
       "archive_today": ["https://archive.ph/DY4GU"],
       "evidence": [],
       "grade": "VERBATIM-ARCHIVED", "owner_pick": true,
@@ -172,6 +184,7 @@
       "text": "Guys we weren't magnanimous enough to the people who are *reviews the past month's news* flinging baseless allegations of gang rape, calling for elected officials to be harassed where ever they go, promising to “impeach” Kavanaugh, and calling Sen. Collins a rape apologist.",
       "context": "Quoted tweet (shown on archived page): 'The football-spiking after Kavanaugh was confirmed this weekend was one such example. There's always *some* of that after a big policy/electoral win, but there's also usually a fair amount of magnanimity and reaching out to the losing side. Not so this time.'",
       "status_url": "https://x.com/lyndseyfifield/status/1049258991472312320",
+      "live_status": "deleted from X — the account is live but this status returns a 404; checked 2026-07-11 (when and by whom it was removed is not determinable)",
       "evidence": [{"label": "Wayback capture (full HTML permalink; 2 captures)", "url": "https://web.archive.org/web/20181009012329/https://twitter.com/lyndseyfifield/status/1049258991472312320"}, {"label": "preservation copy in this repo", "url": "documents/wayback-20181009-fifield-status-1049258991472312320.html"}],
       "grade": "VERBATIM-ARCHIVED"
     }
@@ -219,9 +232,9 @@
   },
   "gaps": [
     "Coverage is capture-limited: the Wayback Machine has no snapshot of her profile timeline between Apr 2, 2018 and 2019; only 38 individual Sept–Oct 2018 statuses were ever archived. This ledger is what survives in archives, not a complete inventory.",
-    "Whether the 2018 tweets remain live, deleted, or restricted today is unverified (live x.com not fetchable in the research environment).",
+    "Live status was checked on X on 2026-07-11 for seven items: items 5, 6, 7, 9, 10, and 11 remain live; item 17 returns a 404 on a live, public account — deleted or removed, with the when and by whom not determinable from outside. The remaining items' live status is unchecked.",
     "Two Kavanaugh-window statuses are unrecoverable: Sept 26, 2018 (eve of the Ford hearing) and Oct 9, 2018 — topics unknown, not included.",
-    "Owner-flagged status 1044290567608389637 (Sept 24, 2018, 18:20 UTC — item 10) has no recovered copy: no Wayback capture, and no archive.today snapshot located yet.",
+    "Item 10 (status 1044290567608389637) was recovered from the live post on 2026-07-11 but still has no archival copy — no Wayback capture and no archive.today snapshot. It is the one ledger item whose evidence depends on the post staying up; snapshotting it is the highest-priority preservation task.",
     "Item 1's retweet text is truncated at 140 characters in the archive; item 4 begins 'Also,' implying a preceding post not found in any archive.",
     "No 2026 direct response from Fifield on the Kavanaugh comparison was located; if she addresses it later, this page should be updated.",
     "Beyond the NY Post description and her quoted founding statement, no separate 2018 statements, letters, or websites of 'Ladies for Kavanaugh' were located in this pass."
