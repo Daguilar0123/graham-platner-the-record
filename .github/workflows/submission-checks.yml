@@ -1,0 +1,40 @@
+name: Submission checks
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: File-type allowlist and size cap
+        run: |
+          set -euo pipefail
+          BASE="origin/${{ github.base_ref }}"
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          FAIL=0
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            case "${f,,}" in
+              *.pdf|*.png|*.jpg|*.jpeg|*.webp|*.txt|*.md|*.json|*.csv|*.html|*.xml|*.yml|*.gitignore) ;;
+              *) echo "::error file=$f::File type not allowed for contributions"; FAIL=1 ;;
+            esac
+            SIZE=$(stat -c%s "$f")
+            if [ "$SIZE" -gt 26214400 ]; then
+              echo "::error file=$f::File exceeds 25 MB cap"; FAIL=1
+            fi
+          done < <(git diff --name-only --diff-filter=AM "$BASE"...HEAD)
+          exit $FAIL
+      - name: Antivirus scan (ClamAV)
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q clamav
+          sudo freshclam --quiet || true
+          clamscan --recursive --infected --exclude-dir='^\./\.git' .
+      - name: JSON validity
+        run: |
+          for f in data/*.json; do
+            python3 -m json.tool "$f" > /dev/null && echo "OK $f"
+          done

@@ -1,0 +1,199 @@
+{
+  "updated": "2026-07-11",
+  "method": "Every allegation and every piece of claimed corroboration in the public record, with the reporter's own words on provenance. Class labels describe what reporters SAID they had; they are not a ruling on whether any allegation is true. 'Independently verified' means examined by an investigation independent of the outlet that published the story (law enforcement, court process, or a disinterested third-party review) — not the outlet's own account of its reporting. No charge, court finding, or adjudication exists anywhere in this record.",
+  "classes": {
+    "EXAMINED": "Reporter says they personally saw the document/item",
+    "RELAYED": "Described to the reporter but not examined",
+    "OUTCRY": "Third party recounting what the accuser told them at the time",
+    "METHOD": "The reporting process itself offered as corroboration",
+    "ABSENT": "No record exists or none was produced",
+    "NOT-CORROBORATED": "The outlet itself said it could not corroborate",
+    "NON-DENIAL": "The campaign did not dispute the specific item",
+    "CHECKED-NEGATIVE": "The outlet checked and found no evidence",
+    "DOCUMENTED": "Figure or fact confirmed on the record by a named party"
+  },
+  "allegations": [
+    {
+      "id": "AL-1",
+      "accuser": "Jenny Racicot",
+      "claim": "Alleges that in late 2021 Platner entered her home uninvited while deeply intoxicated and forced himself on her as she repeatedly told him to stop.",
+      "outlet_of_record": "Politico, July 6, 2026 (Jessica Piper, Adam Wren)",
+      "denial": "“Any accusation of non-consensual behavior is categorically untrue.” — Platner",
+      "independently_verified": false,
+      "items": [
+        {
+          "item": "Police report / legal proceeding",
+          "class": "ABSENT",
+          "provenance": "“There is no police report in this case.” — Adam Wren, on air (MS NOW / Morning Joe, Jul 7, 2026)",
+          "establishes": "No official or legal record exists; the gap the other items were marshaled to fill.",
+          "independently_verified": false
+        },
+        {
+          "item": "Therapist email exchange",
+          "class": "EXAMINED",
+          "provenance": "“We reviewed email exchanges between she and her therapist, referring to what she called this sexual assault and her therapist sort of acknowledging that this had happened to her.” — Wren, on air",
+          "establishes": "Contemporaneous reporting/discussion of the event by her — not independent proof of the act. Emails were produced by Racicot.",
+          "independently_verified": false
+        },
+        {
+          "item": "Contemporaneous confidants",
+          "class": "OUTCRY",
+          "provenance": "“We talked to people who she had spoken with contemporaneously about these attacks and all of those stories lined up and checked out.” — Wren, on air",
+          "establishes": "Their accounts of what she told them at the time were consistent, per the reporter.",
+          "independently_verified": false
+        },
+        {
+          "item": "Screenshots of her messages to others (“consensually careless”)",
+          "class": "EXAMINED",
+          "provenance": "“We saw screenshots that she shared of messages relaying this account to others” … “long before he was … a political candidate.” — Wren, on air",
+          "establishes": "She relayed the account to third parties before his candidacy; bears on timing/motive.",
+          "independently_verified": false
+        },
+        {
+          "item": "Racicot↔Platner Instagram DMs",
+          "class": "RELAYED",
+          "provenance": "“She tried to recover those DMs. We were not able to review those DMs, but she described them to us.” — Wren, on air",
+          "establishes": "The direct exchange between the two people was never reviewed by the reporters — stated plainly, twice, under questioning.",
+          "independently_verified": false
+        },
+        {
+          "item": "Three consistent interviews",
+          "class": "METHOD",
+          "provenance": "“We interviewed her … three separate times. Her story stayed consistent across those times.” — Wren, on air",
+          "establishes": "Internal consistency across repeated interviews with the same outlet.",
+          "independently_verified": false
+        },
+        {
+          "item": "Racicot in the NYT, June 4 — same episode, no assault allegation",
+          "class": "ABSENT",
+          "provenance": "“She declined to elaborate, but said she cut off contact soon after that episode and found his behavior ‘reckless’ and ‘unsettling.’” — NYT, Jun 4, 2026",
+          "establishes": "The assault allegation is a Politico artifact; the NYT had the same person on record a month earlier without it.",
+          "independently_verified": false
+        }
+      ]
+    },
+    {
+      "id": "AL-2",
+      "accuser": "Lyndsey Fifield",
+      "claim": "Alleges that while they dated (~2013–2015) Platner grabbed her hard enough to leave marks and once physically restrained her during an argument.",
+      "outlet_of_record": "The New York Times, June 4, 2026 (Katie Glueck, Lisa Lerer)",
+      "denial": "Platner “strongly disputes” any claims of physical intimidation or altercations (campaign).",
+      "independently_verified": false,
+      "items": [
+        {
+          "item": "The Times' own corroboration statement",
+          "class": "NOT-CORROBORATED",
+          "provenance": "“The Times could not independently corroborate Ms. Fifield's account of the altercations.” — NYT, in print",
+          "establishes": "The publishing outlet itself states the physical claims were not independently corroborated.",
+          "independently_verified": false
+        },
+        {
+          "item": "Two friends interviewed",
+          "class": "NOT-CORROBORATED",
+          "provenance": "“…confirmed that the pair had an emotionally volatile relationship but could not corroborate the physical altercations or the most controversial comments she described.” — NYT",
+          "establishes": "Volatility corroborated; the physical altercations and most controversial comments were not. By her own account she told no one at the time.",
+          "independently_verified": false
+        },
+        {
+          "item": "Texts, Google Chats, Facebook messages",
+          "class": "EXAMINED",
+          "provenance": "“The Times reviewed texts between Ms. Fifield and Mr. Platner, along with Google Chat exchanges, texts and Facebook messages between Ms. Fifield and her friends during and after the relationship.”",
+          "establishes": "The relationship's existence and tenor — not the disputed incidents.",
+          "independently_verified": false
+        },
+        {
+          "item": "Diary entries",
+          "class": "EXAMINED",
+          "provenance": "“The Times also reviewed some of Ms. Fifield's diary entries from after the relationship had ended.”",
+          "establishes": "Post-relationship state of mind — the entries are not contemporaneous with the alleged incidents.",
+          "independently_verified": false
+        }
+      ]
+    },
+    {
+      "id": "AL-3",
+      "accuser": "Lyndsey Fifield",
+      "claim": "Alleges Platner knew years ago that his chest tattoo was a Nazi symbol and called it “my Totenkopf” — contradicting his account that he learned of the association from reporters in 2025.",
+      "outlet_of_record": "NYT June 4, 2026; CNN June 5, 2026; Jewish Insider Oct 21, 2025 (separate acquaintance)",
+      "denial": "Platner “strongly disputes” her account of what he knew and what he told her (campaign).",
+      "independently_verified": false,
+      "items": [
+        {
+          "item": "Aug. 20, 2025 group-chat screenshot (“It's a Totenkopf … An actual one”)",
+          "class": "EXAMINED",
+          "provenance": "“…months before Mr. Platner acknowledged the tattoo himself … according to a screenshot she shared with The Times.” — NYT",
+          "establishes": "Her strongest dated document: it proves SHE said it before the controversy — not that HE told her. The underlying ‘he knew’ claim remains her word against his denial.",
+          "independently_verified": false
+        },
+        {
+          "item": "Photo of the tattoo in her possession",
+          "class": "ABSENT",
+          "provenance": "“I had no photographic evidence of it … if I'm fabricating this story, I'm doing it without even having a photo of this tattoo.” — Fifield, on camera (CNN interview, Jul 7, 2026)",
+          "establishes": "She had no photo; her early claims were made without documentary imagery.",
+          "independently_verified": false
+        },
+        {
+          "item": "“My Totenkopf” at a Capitol Hill bar (~2012)",
+          "class": "OUTCRY",
+          "provenance": "A former acquaintance said Platner referred to it as “my Totenkopf” at a Capitol Hill bar around 2012. — Jewish Insider, Oct 21, 2025",
+          "establishes": "A second person making a parallel claim; anonymous in the original CNN piece, one corroborating person per CNN Oct 24.",
+          "independently_verified": false
+        }
+      ]
+    },
+    {
+      "id": "AL-4",
+      "accuser": "Lyndsey Fifield",
+      "claim": "Recalls Platner repeatedly saying that if anybody broke in, “I would rape them … to show them that I'm dominant.”",
+      "outlet_of_record": "The New York Times, June 4, 2026",
+      "denial": "None on this item — see provenance.",
+      "independently_verified": false,
+      "items": [
+        {
+          "item": "Campaign response to the remark",
+          "class": "NON-DENIAL",
+          "provenance": "“Asked about those remarks, a Platner campaign official did not dispute them. A friend who knew Mr. Platner and Ms. Fifield during that period said the comments sounded out of character.” — NYT",
+          "establishes": "The campaign's non-denial is the closest thing to corroboration on this item, per the article's own framing.",
+          "independently_verified": false
+        }
+      ]
+    },
+    {
+      "id": "AL-5",
+      "accuser": "Lyndsey Fifield",
+      "claim": "Alleges Platner removed condoms during sex without her consent (reported as allegedly at least six times).",
+      "outlet_of_record": "The Washington Post, July 7, 2026; CNN, July 7, 2026 — [secondary: WaPo not read in full in this archive]",
+      "denial": "Campaign called the July allegations “categorically false,” from “a person with a well-documented political agenda.”",
+      "independently_verified": false,
+      "items": [
+        {
+          "item": "Friend's recollection of contemporaneous complaint",
+          "class": "OUTCRY",
+          "provenance": "[Secondary] A friend told the Post she recalled Fifield being upset at the time; CNN's piece reported a friend (Emily Zanotti) saying Fifield described it years earlier.",
+          "establishes": "Contemporaneous complaint recalled by a friend; otherwise her account. She said she had shared it off the record with the NYT earlier but was too embarrassed to go public until after the Racicot story.",
+          "independently_verified": false
+        }
+      ]
+    }
+  ],
+  "context_checks": [
+    {
+      "item": "Fifield–Collins campaign relationship",
+      "class": "CHECKED-NEGATIVE",
+      "provenance": "“Records show no evidence of any relationship between Ms. Fifield and the Collins campaign.” — NYT",
+      "establishes": "The NYT checked for a coordination tie and found none."
+    },
+    {
+      "item": "Fifield's payments from Independent Women",
+      "class": "DOCUMENTED",
+      "provenance": "Roughly $15,000 total over 2021–2022; never an employee; last paid 2022 — per IW president Carrie Lukas, in the NYT.",
+      "establishes": "The documented money trail between Fifield and the conservative organization."
+    },
+    {
+      "item": "Accuser–press connection",
+      "class": "DOCUMENTED",
+      "provenance": "CNN (Jul 7) identified activist/lawyer Cheyenne Hunt as having connected accusers with media; CJR (Jul 8, Betsy Morais) examined that role in detail.",
+      "establishes": "How the accusers reached reporters — documented by the outlets themselves and by a journalism-review analysis."
+    }
+  ]
+}

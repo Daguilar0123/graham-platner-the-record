@@ -1,0 +1,46 @@
+{
+  "updated": "2026-07-11",
+  "milestones": [
+    {"date": "2025-08", "label": "Campaign launch", "detail": "Platner enters the race for U.S. Senate in Maine."},
+    {"date": "2025-10-16", "label": "First negative wave begins", "detail": "CNN KFile and Politico publish deleted-Reddit-posts stories the same day."},
+    {"date": "2025-10-20", "label": "Tattoo preemption", "detail": "Told that tattoo images were being shopped as opposition research, Platner releases video via Pod Save America."},
+    {"date": "2026-04-30", "label": "Mills suspends campaign", "detail": "Gov. Janet Mills suspends her primary campaign; her name stays on the ballot."},
+    {"date": "2026-05-30", "label": "Pre-primary stories", "detail": "WSJ and NYT explicit-texts stories publish the same day — ten days before the primary."},
+    {"date": "2026-06-04", "label": "NYT dating-history article", "detail": "“Several Women Who Dated Graham Platner Recall ‘Unsettling’ Behavior” — five days before the primary."},
+    {"date": "2026-06-09", "label": "PRIMARY — Platner wins", "detail": "156,084 votes, 72.13% of valid votes (official final); most primary votes of any Democratic U.S. Senate candidate in Maine history since 1918."},
+    {"date": "2026-07-06", "label": "Assault allegation published", "detail": "Politico publishes Jenny Racicot's sexual-assault allegation; WaPo and CNN carry parallel interviews the same day."},
+    {"date": "2026-07-08", "label": "Campaign suspension announced", "detail": "Platner posts video: “this is all false … we are suspending campaign operations.”"},
+    {"date": "2026-07-10", "label": "Formal withdrawal", "detail": "Written withdrawal filed with the Maine Secretary of State."},
+    {"date": "2026-07-13", "label": "Statutory withdrawal deadline", "detail": "5 p.m., second Monday in July — last day a primary winner's withdrawal lets the party fill the vacancy (21-A M.R.S. § 374-A)."},
+    {"date": "2026-07-27", "label": "Party replacement deadline", "detail": "5 p.m., fourth Monday in July — deadline for the party committee to nominate a replacement."},
+    {"date": "2026-11-03", "label": "General election", "detail": "The seat held by Sen. Susan Collins is on the ballot."}
+  ],
+  "monthly_overlay": {
+    "note": "Stories = primary records in the media catalog (excludes secondary/aggregation items). Spending = FEC Schedule E independent expenditures by filing date, deduped (F24 notices double-filed on later F3X reports removed); support figures approximate for small undated items. Sources: attacks.json; outside-money FEC research (candidate ID S6ME00373).",
+    "series": [
+      {"month": "2025-10", "stories": 12, "oppose_usd": 0, "support_usd": 0},
+      {"month": "2025-11", "stories": 1, "oppose_usd": 0, "support_usd": 0},
+      {"month": "2025-12", "stories": 0, "oppose_usd": 0, "support_usd": 0, "note": "Stronger America Inc. (501(c)(4)) reported giving $3M to Pine Tree Results PAC on 2025-12-29 — a donor into the PAC, not an FEC independent expenditure."},
+      {"month": "2026-01", "stories": 0, "oppose_usd": 0, "support_usd": 0},
+      {"month": "2026-02", "stories": 2, "oppose_usd": 0, "support_usd": 0},
+      {"month": "2026-03", "stories": 0, "oppose_usd": 0, "support_usd": 0},
+      {"month": "2026-04", "stories": 1, "oppose_usd": 1999500, "support_usd": 0},
+      {"month": "2026-05", "stories": 4, "oppose_usd": 1999500, "support_usd": 69606},
+      {"month": "2026-06", "stories": 5, "oppose_usd": 7078173, "support_usd": 250000},
+      {"month": "2026-07", "stories": 10, "oppose_usd": 0, "support_usd": 0, "note": "July stories run Jul 6–10; no new opposing IE filings in the Jul 1–8 window in the deduped ledger."}
+    ],
+    "totals": {"oppose_usd": 11077173, "support_usd": 323426, "ratio": "34:1", "oppose_before_primary": 5750012, "oppose_after_primary_to_exit": 5327161}
+  },
+  "mandate": {
+    "official_votes": 156084,
+    "share_valid": "72.13%",
+    "share_all_ballots": "70.18%",
+    "total_ballots": 222405,
+    "opponents": [{"name": "Janet T. Mills", "votes": 41644, "share": "19.24%", "note": "suspended campaign Apr 30; remained on ballot"}, {"name": "David A. Costello", "votes": 17560, "share": "8.11%"}],
+    "record": "Most primary votes received by any Democratic U.S. Senate candidate in Maine history, since popular Senate elections began in 1918 (AP data / state election data analysis, reported by Maine Public, Jun 11, 2026).",
+    "record_caveat": "The statement's broader claim — largest number in the history of Maine primaries, all offices and parties — is unverified.",
+    "election_night_note": "Election-night partials showed 77.7% when the race was called (BDN, 9:07 p.m.); the official final tabulation is 72.13% of valid votes.",
+    "source": "Maine Secretary of State, official final tabulation, US Senate DEM - FINAL.xlsx",
+    "source_url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/inline-files/US%20Senate%20DEM%20-%20FINAL.xlsx"
+  }
+}

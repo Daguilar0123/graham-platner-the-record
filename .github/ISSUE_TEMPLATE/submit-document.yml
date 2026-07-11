@@ -1,0 +1,55 @@
+name: Submit a document
+description: Contribute a public-record document to the archive. It will be reviewed, scanned, and vetted before anything is published.
+title: "[Document] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to the record. Please read the
+        [submission rules](../blob/main/CONTRIBUTING.md) first:
+        public-record material only, provenance required, no personal
+        information about private individuals. Attach the file by dragging
+        it into the description field below.
+  - type: input
+    id: what
+    attributes:
+      label: What is this document?
+      description: e.g. "FEC Schedule E filing image", "archived Bangor Daily News article, Oct 17 2025", "dated screenshot of a public post"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where does it come from?
+      description: The original source (URL if it exists) and how you obtained it.
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date of the document
+      description: When it was created/published (best available).
+    validations:
+      required: true
+  - type: textarea
+    id: file
+    attributes:
+      label: The document
+      description: Drag the file into this field (pdf, png, jpg, webp, txt, md, json, csv — max 25 MB). For video/audio, paste a YouTube or archive.org link instead.
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why it belongs in the record
+      description: One or two sentences. Remember — documentation, not argument.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Submission rules
+      options:
+        - label: This is public-record material, contains no private individuals' personal information, and I have described its provenance truthfully.
+          required: true
