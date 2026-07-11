@@ -6,7 +6,8 @@
   "grades": {
     "VERBATIM-ARCHIVED": "The actual archived tweet page/JSON was retrieved and read",
     "VERBATIM-QUOTED": "Quoted verbatim in a credible article whose text was retrieved",
-    "REPORTED": "Described but not quoted — no item in this ledger carries this grade"
+    "REPORTED": "Described but not quoted — no item in this ledger carries this grade",
+    "PENDING-TRANSCRIPTION": "Owner-captured archive.today snapshot exists but has not yet been transcribed by a human (archive.today blocks automated readers; the Wayback Machine has no capture)"
   },
   "key_dates_2018": "Initial confirmation hearings Sept 4–7 · Ford's allegation reported anonymously Sept 12–14 · Ford identified publicly Sept 16 (Washington Post) · Ford–Kavanaugh hearing Sept 27 · supplemental FBI inquiry Sept 28–Oct 4 · Collins floor speech Oct 5 · confirmation vote Oct 6, 2018",
   "items": [
@@ -54,7 +55,16 @@
       "grade": "VERBATIM-ARCHIVED"
     },
     {
-      "n": 6, "date": "2018-09-24", "time": "11:55 UTC (7:55 a.m. EDT)", "type": "Reply",
+      "n": 6, "date": "2018-09-24", "time": "03:40 UTC (Sept 23, 11:40 p.m. EDT)", "type": "Post — owner-flagged; exact type to confirm at transcription",
+      "text": null,
+      "context": "Posted 23 minutes after item 5, the same evening as the 'monstrous evil' thread (items 4–5). The Wayback Machine has no capture of this status; the owner-captured archive.today snapshot is the only known evidence and requires a human visit to read (archive.today blocks automated readers). Text and per-item analysis will be added at transcription.",
+      "status_url": "https://x.com/lyndseyfifield/status/1044069060655423488",
+      "archive_today": ["https://archive.ph/lL94k"],
+      "evidence": [],
+      "grade": "PENDING-TRANSCRIPTION", "owner_pick": true, "analysis": null
+    },
+    {
+      "n": 7, "date": "2018-09-24", "time": "11:55 UTC (7:55 a.m. EDT)", "type": "Reply",
       "text": "@JustinBeagley @luvman33wife @SenateDems If you don't think these baseless smears have ruined his reputation irrevocably you're truly, truly demented/naive/blindly partisan.",
       "context": "Reply to @JustinBeagley in item 4's conversation. Full text recovered from extended_tweet.full_text in the archived API JSON.",
       "status_url": "https://x.com/lyndseyfifield/status/1044193598252699648",
@@ -62,7 +72,25 @@
       "grade": "VERBATIM-ARCHIVED"
     },
     {
-      "n": 7, "date": "2018-09-25", "time": "18:05 UTC (2:05 p.m. EDT)", "type": "Reply to @neeratanden",
+      "n": 8, "date": "2018-09-24", "time": "15:11 UTC (11:11 a.m. EDT)", "type": "Post — owner-flagged; exact type to confirm at transcription",
+      "text": null,
+      "context": "Posted the morning after the 'monstrous evil' thread, three days before the Ford–Kavanaugh hearing. No Wayback capture exists; the owner-captured archive.today snapshot is the only known evidence. Text and per-item analysis will be added at transcription.",
+      "status_url": "https://x.com/lyndseyfifield/status/1044242914665275392",
+      "archive_today": ["https://archive.ph/Xfm9I"],
+      "evidence": [],
+      "grade": "PENDING-TRANSCRIPTION", "owner_pick": true, "analysis": null
+    },
+    {
+      "n": 9, "date": "2018-09-24", "time": "18:20 UTC (2:20 p.m. EDT)", "type": "Post — owner-flagged; exact type to confirm at transcription",
+      "text": null,
+      "context": "Posted mid-afternoon the day after the 'monstrous evil' thread. No Wayback capture exists; the two owner-captured archive.today snapshots are the only known evidence (both links as provided by the owner 2026-07-11; mapping to be confirmed at transcription). Text and per-item analysis will be added at transcription.",
+      "status_url": "https://x.com/lyndseyfifield/status/1044290567608389637",
+      "archive_today": ["https://archive.ph/DY4GU", "https://archive.ph/KtavQ"],
+      "evidence": [],
+      "grade": "PENDING-TRANSCRIPTION", "owner_pick": true, "analysis": null
+    },
+    {
+      "n": 10, "date": "2018-09-25", "time": "18:05 UTC (2:05 p.m. EDT)", "type": "Reply to @neeratanden",
       "text": "Last week: OMG SHE MUST BE ALLOWED TO TESTIFY / Five days ago: OMG HOW DARE THEY BULLY HER TO TESTIFY / Three days ago: OMG THESE OLD MEN ARE GOING TO BULLY HER! / Today: OMG HOW DARE THEY TRY TO LET A WOMAN TALK TO HER! / You guys... know we can *see you* right?",
       "context": "Tanden's tweet (shown on archived page): 'Dr. Ford should testify and refuse to answer questions by anyone who is not a senator. Senators who hide behind a female attorney are cowards.'",
       "status_url": "https://x.com/lyndseyfifield/status/1044649214779822080",
@@ -70,7 +98,7 @@
       "grade": "VERBATIM-ARCHIVED"
     },
     {
-      "n": 8, "date": "2018-09-27", "time": "16:30 UTC (12:30 p.m. EDT)", "type": "Quote-tweet of @JerryDunleavy, posted during the Ford–Kavanaugh hearing",
+      "n": 11, "date": "2018-09-27", "time": "16:30 UTC (12:30 p.m. EDT)", "type": "Quote-tweet of @JerryDunleavy, posted during the Ford–Kavanaugh hearing",
       "text": "This is a horrific failure on part of her legal team and Senate Dems. They have openly, blatantly used this woman.",
       "context": "Quoted tweet (shown on archived page): 'Dr. Christine Blasey Ford just said that she would've been willing to have Senate Judiciary Committee investigators come to California to speak with her, but that it hadn't been made clear to her that they were willing to do so.'",
       "status_url": "https://x.com/lyndseyfifield/status/1045350095577845761",
@@ -78,7 +106,7 @@
       "grade": "VERBATIM-ARCHIVED"
     },
     {
-      "n": 9, "date": "2018-10-02", "time": "10:38 UTC (6:38 a.m. EDT)", "type": "Original standalone tweet",
+      "n": 12, "date": "2018-10-02", "time": "10:38 UTC (6:38 a.m. EDT)", "type": "Original standalone tweet",
       "text": "Our nation's Lindsey Graham resources are running critically low. / We need more. How can we make more?!",
       "context": "Does not mention Kavanaugh or Ford. Posted during the confirmation-fight week following Sen. Lindsey Graham's widely covered Sept 27 hearing remarks; the connection is contextual/inferential, so this item is included only as periphery.",
       "status_url": "https://x.com/lyndseyfifield/status/1047073310922682368",
@@ -86,7 +114,7 @@
       "grade": "VERBATIM-ARCHIVED", "contextual": true
     },
     {
-      "n": 10, "date": "2018-10-04", "time": "22:26 UTC (6:26 p.m. EDT)", "type": "Reply to @ananavarro",
+      "n": 13, "date": "2018-10-04", "time": "22:26 UTC (6:26 p.m. EDT)", "type": "Reply to @ananavarro",
       "text": "What's horrible is that you KNOW this is untrue—and you know your followers are too stupid to *know* it's untrue. / And you're taking advantage of them.",
       "context": "Navarro's tweet (shown on archived page): 'What do -The Catholic Journal -The largest organization of Christian churches -Former Supreme Court Justice John Paul Stevens all have in common? They all think Kavanaugh should not be on the Supreme Court. None of them are Liberals. None of them are pro Roe v Wade.'",
       "status_url": "https://x.com/lyndseyfifield/status/1047976255814029312",
@@ -94,7 +122,7 @@
       "grade": "VERBATIM-ARCHIVED"
     },
     {
-      "n": 11, "date": "2018-10-07", "time": "published 23:40 UTC (7:40 p.m. EDT)", "type": "Statement to the New York Post (press quote, not a tweet)",
+      "n": 14, "date": "2018-10-07", "time": "published 23:40 UTC (7:40 p.m. EDT)", "type": "Statement to the New York Post (press quote, not a tweet)",
       "text": "But in the wake of the baseless, 11th-hour accusations orchestrated to stop Kavanaugh's confirmation, we couldn't stay silent anymore.",
       "context": "From Karol Markowicz's NY Post column 'Another casualty of the Kavanaugh fight: the media's what-women-think scam.' The column describes Inez Stepman and Fifield as co-founders of Ladies for Kavanaugh, formed 'on their own time' apart from their day jobs (Stepman at Independent Women's Forum, Fifield at the Heritage Foundation). This is the primary source of the 'Ladies for Kavanaugh' quote that 2026 coverage sometimes presents as a tweet.",
       "status_url": "https://nypost.com/2018/10/07/another-casualty-of-the-kavanaugh-fight-the-medias-what-women-think-scam/",
@@ -102,7 +130,7 @@
       "grade": "VERBATIM-QUOTED"
     },
     {
-      "n": 12, "date": "2018-10-08", "time": "11:23 UTC (7:23 a.m. EDT)", "type": "Quote-tweet of @NateSilver538, two days after the confirmation vote",
+      "n": 15, "date": "2018-10-08", "time": "11:23 UTC (7:23 a.m. EDT)", "type": "Quote-tweet of @NateSilver538, two days after the confirmation vote",
       "text": "Guys we weren't magnanimous enough to the people who are *reviews the past month's news* flinging baseless allegations of gang rape, calling for elected officials to be harassed where ever they go, promising to “impeach” Kavanaugh, and calling Sen. Collins a rape apologist.",
       "context": "Quoted tweet (shown on archived page): 'The football-spiking after Kavanaugh was confirmed this weekend was one such example. There's always *some* of that after a big policy/electoral win, but there's also usually a fair amount of magnanimity and reaching out to the losing side. Not so this time.'",
       "status_url": "https://x.com/lyndseyfifield/status/1049258991472312320",
@@ -126,6 +154,30 @@
       {"when": "X post quoted in Jonathan Turley's op-ed (The Hill, Jun 8, 2026)", "text": "Why does it say 'nobody could corroborate' when I offered them sources that COULD corroborate?", "grade": "VERBATIM-QUOTED"},
       {"when": "X, Jul 7, 2026, 11:38 UTC (status 2074458074983596378, thread, via Twitchy)", "text": "I actually understand why Democrat leaders didn't take our stories seriously when the Times reported them in June but are taking them seriously now. It was by design.", "grade": "VERBATIM-QUOTED"}
     ]
+  },
+  "posture_analysis": {
+    "label": "INTERPRETIVE LAYER — descriptive analysis by Claude (the research assistant), separated from the fact ledger above. It describes patterns in her documented statements. It is not a value judgment, and it draws no conclusion about the truth of any allegation — hers or anyone's.",
+    "question": "Is there a difference between her public posture toward the Kavanaugh allegations (2018) and her posture in the Platner matter (2026)? If so, what?",
+    "posture_2018": {
+      "summary": "In the archived 2018 items she treated the allegations against Kavanaugh as presumptively false and strategically manufactured: 'baseless smears' (item 7), 'the orchestrated smearing of a good man' (item 5), 'baseless, 11th-hour accusations orchestrated to stop Kavanaugh's confirmation' (item 14), and — after the vote — 'baseless allegations of gang rape' (item 15). She challenged evidentiary process details (the polygraph's provenance, items 2–3) and mocked what she described as shifting procedural objections (item 10). Where she addressed the accuser directly, she directed blame at handlers: Ford was being 'openly, blatantly used' by 'her legal team and Senate Dems' (item 11).",
+      "confidence": "High — every element quoted verbatim from archived posts in the ledger above."
+    },
+    "posture_2026": {
+      "summary": "In 2026 she is herself a first-party accuser. She describes going public as costly and painful, objects to her account being dismissed because of her politics ('violating and dismissive'), asserts that corroborating sources existed and were offered to reporters ('sources that COULD corroborate'), says she is in contact with other potential accusers weighing whether to come forward, and attributes the timing of how the allegations were received to political design ('It was by design').",
+      "confidence": "High — every element quoted verbatim in Part 2 above."
+    },
+    "differences": [
+      "Role and claimed epistemic basis. 2018: third-party defender of an accused man, with no claimed first-hand knowledge of the underlying events ('when he isn't' states a conclusion about facts she did not witness). 2026: first-party accuser claiming direct experience. This is the most material difference, and it is the one that cuts in her favor: believing what you say you experienced and disbelieving what you assessed as unsupported are not logically inconsistent positions.",
+      "Default stance toward a contested allegation. 2018: the allegations are treated as presumptively orchestrated and false, with late timing itself offered as evidence of bad faith ('11th-hour'). 2026: she treats dismissal of allegations on political-timing grounds as illegitimate. The categories of objection she raised in 2018 — decisive-moment timing, orchestration, evidentiary gaps — are structurally the same categories now deployed against the 2026 allegations by Platner's side. The parallel is structural, documented on both pages of this site; whether it amounts to inconsistency or to distinguishable situations is left to the reader.",
+      "Treatment of the accuser as a person. 2018: sympathy was framed through the claim that Ford was being used by her handlers (item 11) — the accusation itself remained 'baseless.' 2026: she frames accusers (herself included) as vulnerable people bearing real costs for coming forward."
+    ],
+    "continuities": [
+      "Distrust of institutional handling in both episodes: in 2018, Senate Democrats and the media narrative; in 2026, the New York Times' handling of her account and Democratic leadership's selective reception.",
+      "Attribution of orchestration to political actors in both episodes — 2018: allegations orchestrated to stop a confirmation; 2026: reception of allegations timed 'by design.'",
+      "In both periods she presents herself as speaking against a prevailing narrative at personal cost."
+    ],
+    "fairness_note": "The two situations are not symmetric: proximity to the underlying events differs (observer vs. participant), the accused differ, and eight years separate the statements. The 2018 posts also predate her own decision to come forward about experiences she says she had already had by then but had told no one about — a fact she has stated (NYT, June 4, 2026: she 'did not tell anyone at the time,' saying she had been embarrassed). Any reading of the comparison should account for that.",
+    "overall_confidence": "HIGH for the description of each period's posture (all verbatim-sourced). MEDIUM for the comparative characterization — 'posture' is an interpretive construct, and the situations differ in her claimed proximity to the events. NO inference about motive, sincerity, or the truth of any allegation is offered, in either direction."
   },
   "gaps": [
     "Coverage is capture-limited: the Wayback Machine has no snapshot of her profile timeline between Apr 2, 2018 and 2019; only 38 individual Sept–Oct 2018 statuses were ever archived. This ledger is what survives in archives, not a complete inventory.",

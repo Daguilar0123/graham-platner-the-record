@@ -56,6 +56,15 @@ header.hero{padding:34px 0 30px}
 .qitem .who{font-size:12.5px;color:var(--muted)}
 .qitem blockquote{font-family:var(--serif);font-size:16px;margin:6px 0 4px;max-width:70ch}
 .qitem .ev{font-size:12px;color:var(--muted)}
+.pend{color:var(--muted);font-style:italic}
+.interp{border:1px dashed var(--warn);background:var(--surface);padding:16px 18px;margin:18px 0}
+.interp .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--warn);margin-bottom:10px}
+.interp h4{font-family:var(--serif);font-weight:600;font-size:15px;margin:14px 0 4px}
+.interp p, .interp li{font-size:14px;max-width:78ch}
+.interp ul{margin:6px 0;padding-left:20px}
+.byline{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-top:14px}
+.icn{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+.icn svg{width:15px;height:15px}
 ul.gaps{margin:12px 0;padding-left:20px;max-width:80ch}
 ul.gaps li{margin:7px 0;font-size:14px;color:var(--muted)}
 footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px;font-size:13px;color:var(--muted)}
@@ -107,8 +116,13 @@ footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px
   <div id="hers-out"></div>
 </section>
 
+<section id="posture">
+  <div class="kicker">Part 3</div><h2>Posture, compared — an interpretive layer</h2>
+  <div id="posture-out"></div>
+</section>
+
 <section id="gaps">
-  <div class="kicker">Part 3</div><h2>Gaps and limitations, declared</h2>
+  <div class="kicker">Part 4</div><h2>Gaps and limitations, declared</h2>
   <ul class="gaps" id="gaps-out"></ul>
   <p class="note" id="method"></p>
 </section>
@@ -119,12 +133,18 @@ footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px
   fact about any person. Corrections with sources outrank everything:
   <a href="https://github.com/Daguilar0123/graham-platner-the-record/issues">open an issue</a>.
   Data: <a href="data/fifield-kavanaugh.json">fifield-kavanaugh.json</a>. © 2026 Daniel Ismael Aguilar</p>
+  <div class="byline">
+    <span>Compiled by Daniel Aguilar</span>
+    <a class="icn" href="https://x.com/imdanielaguilar" aria-label="Daniel Aguilar on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25h6.826l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>@imdanielaguilar</a>
+    <a class="icn" href="https://www.instagram.com/imdanielaguilar" aria-label="Daniel Aguilar on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"></rect><circle cx="12" cy="12" r="4.3"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" stroke="none"></circle></svg>@imdanielaguilar</a>
+    <a class="icn" href="https://buymeacoffee.com/danny.thetatteredrose" aria-label="Support this work on Buy Me a Coffee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4.5 8h12v7.5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"></path><path d="M16.5 9.5H18a2.5 2.5 0 0 1 0 5h-1.5"></path><path d="M8 5.5V4M12 5.5V4"></path></svg>Support this work</a>
+  </div>
 </footer>
 </div>
 
 <script>
 const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;");
-const GTAG = {"VERBATIM-ARCHIVED":"good","VERBATIM-QUOTED":"acc","REPORTED":"warn"};
+const GTAG = {"VERBATIM-ARCHIVED":"good","VERBATIM-QUOTED":"acc","REPORTED":"warn","PENDING-TRANSCRIPTION":"warn"};
 fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
   document.getElementById("keydates").textContent = "2018 reference dates: " + D.key_dates_2018 + ".";
   document.getElementById("items-out").innerHTML = D.items.map(it=>`
@@ -135,13 +155,29 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
         ${it.contextual?'<span class="tag">contextual / periphery</span>':""}
         <span class="ty">${esc(it.type)}</span>
       </header>
-      <blockquote>${esc(it.text)}</blockquote>
+      ${it.text!==null?`<blockquote>${esc(it.text)}</blockquote>`:`<blockquote class="pend">[ Text pending transcription — the owner-captured archive snapshot below is the only known copy; open it to read the post. ]</blockquote>`}
       <div class="ctx">${esc(it.context)}</div>
       <div class="links">
         <a href="${esc(it.status_url)}">original post ↗</a>
-        ${it.evidence.map(e=>`<a href="${esc(e.url)}">${esc(e.label)} ↗</a>`).join("")}
+        ${(it.evidence||[]).map(e=>`<a href="${esc(e.url)}">${esc(e.label)} ↗</a>`).join("")}
+        ${(it.archive_today||[]).map((u,i)=>`<a href="${esc(u)}">archive.today snapshot${it.archive_today.length>1?" "+(i+1):""} (owner-captured) ↗</a>`).join("")}
       </div>
+      ${it.analysis?`<div class="interp" style="margin:0 18px 16px"><div class="lab">Interpretive — descriptive analysis, not a value judgment · confidence: ${esc(it.analysis.confidence)}</div><p><b>What it's about:</b> ${esc(it.analysis.about)}</p><p><b>Purpose / intended message (as best read):</b> ${esc(it.analysis.purpose)}</p></div>`:""}
     </div>`).join("");
+  if(D.posture_analysis){
+    const P = D.posture_analysis;
+    document.getElementById("posture-out").innerHTML = `
+      <div class="interp">
+        <div class="lab">${esc(P.label)}</div>
+        <p><b>${esc(P.question)}</b></p>
+        <h4>Her 2018 posture (confidence: high)</h4><p>${esc(P.posture_2018.summary)}</p>
+        <h4>Her 2026 posture (confidence: high)</h4><p>${esc(P.posture_2026.summary)}</p>
+        <h4>Differences observed</h4><ul>${P.differences.map(d=>`<li>${esc(d)}</li>`).join("")}</ul>
+        <h4>Continuities observed</h4><ul>${P.continuities.map(c=>`<li>${esc(c)}</li>`).join("")}</ul>
+        <h4>Fairness note</h4><p>${esc(P.fairness_note)}</p>
+        <h4>Confidence, overall</h4><p>${esc(P.overall_confidence)}</p>
+      </div>`;
+  }
   document.getElementById("raised-out").innerHTML = D.comparison_2026.raised_by_others.map(q=>`
     <div class="qitem"><div class="who">${esc(q.who)} · <span class="tag ${GTAG[q.grade]}">${esc(q.grade)}</span></div>
     <blockquote>${esc(q.text)}</blockquote><div class="ev">${esc(q.evidence)}</div></div>`).join("");
@@ -155,5 +191,14 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
   document.getElementById("items-out").innerHTML = '<p class="note">Could not load data/fifield-kavanaugh.json — serve this page over HTTP or view the published site.</p>';
 });
 </script>
+<script data-name="BMC-Widget" data-cfasync="false"
+  src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="danny.thetatteredrose"
+  data-description="Support this work"
+  data-message="Independent, receipts-linked research takes time. If this page is useful to you, you can support it right here — thank you."
+  data-color="#3D5A73"
+  data-position="Right"
+  data-x_margin="18"
+  data-y_margin="18"></script>
 </body>
 </html>
