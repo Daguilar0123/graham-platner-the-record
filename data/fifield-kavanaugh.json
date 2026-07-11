@@ -1,0 +1,138 @@
+{
+  "updated": "2026-07-11",
+  "subject": "Lyndsey Fifield (X/Twitter: @lyndseyfifield, user ID 16347021)",
+  "purpose": "Verbatim documentary record of Fifield's public posts and statements concerning the Brett Kavanaugh Supreme Court confirmation and the Christine Blasey Ford / related allegations, September–October 2018, plus her 2026 statements relevant to the comparison others have drawn. Documentary only: no characterization of motive, no conclusions. This record neither proves nor disproves anything about any 2026 allegation.",
+  "method": "Wayback Machine CDX inventories of her archived statuses (38 unique tweets posted Sept 1 – Oct 31, 2018 have captures; every one was fetched and read), archived 2018 press, and retrieved 2026 coverage. The ledger is what survives in archives, not a complete inventory. Times UTC, decoded from tweet IDs; line breaks shown as ' / '. [sic] marks spelling as printed in source.",
+  "grades": {
+    "VERBATIM-ARCHIVED": "The actual archived tweet page/JSON was retrieved and read",
+    "VERBATIM-QUOTED": "Quoted verbatim in a credible article whose text was retrieved",
+    "REPORTED": "Described but not quoted — no item in this ledger carries this grade"
+  },
+  "key_dates_2018": "Initial confirmation hearings Sept 4–7 · Ford's allegation reported anonymously Sept 12–14 · Ford identified publicly Sept 16 (Washington Post) · Ford–Kavanaugh hearing Sept 27 · supplemental FBI inquiry Sept 28–Oct 4 · Collins floor speech Oct 5 · confirmation vote Oct 6, 2018",
+  "items": [
+    {
+      "n": 1, "date": "2018-09-05", "time": "13:20 UTC", "type": "Plain retweet (no comment) of @LarryOConnor",
+      "text": "RT @LarryOConnor: So nice to see John McCain's spirit and legacy of bipartisanship and camaraderie on full display during yesterday's Kavan…",
+      "context": "Day 2 of the initial confirmation hearings; pre-dates the public Ford allegation. The retweeted words are O'Connor's, not hers. Text truncated at 140 characters in the archived JSON.",
+      "status_url": "https://x.com/lyndseyfifield/status/1037329598776844294",
+      "evidence": [{"label": "Wayback capture (API JSON)", "url": "https://web.archive.org/web/20180905132023/https://twitter.com/lyndseyfifield/status/1037329598776844294"}],
+      "grade": "VERBATIM-ARCHIVED", "contextual": true
+    },
+    {
+      "n": 2, "date": "2018-09-19", "time": "15:01 UTC (11:01 a.m. EDT)", "type": "Original standalone tweet",
+      "text": "Dear God. / I just learned the lie detector test was administered *by her lawyer in their offices.* / If Trump said \"I passed a lie detector test in Cohen's office that proves no collusion!\" the media would rightly mock him. / And yet in this case we're told it's solid evidence.",
+      "context": "The tweet does not name Ford or Kavanaugh. Ford's polygraph had been reported publicly that week; Fifield's own follow-up (item 3) refers to the polygraph not being 'an FBI polygraph.'",
+      "status_url": "https://x.com/lyndseyfifield/status/1042428383974641664",
+      "evidence": [{"label": "Wayback capture (full HTML permalink; 3 captures exist)", "url": "https://web.archive.org/web/20190909134722/https://twitter.com/lyndseyfifield/status/1042428383974641664"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 3, "date": "2018-09-19", "time": "16:23 UTC (12:23 p.m. EDT)", "type": "Self-reply in the same thread",
+      "text": "Holy cow—walking back from a meeting checking replies and see a lot of folks asking for a “source” - I heard this on CNN. This was the first time I'd heard that this wasn't an FBI polygraph (which is the impression a LOT of people have) - didn't think I was reporting “new” info.",
+      "context": "Her own reply beneath item 2.",
+      "status_url": "https://x.com/lyndseyfifield/status/1042448985477316608",
+      "evidence": [{"label": "Same archived permalink page as item 2", "url": "https://web.archive.org/web/20190909134722/https://twitter.com/lyndseyfifield/status/1042428383974641664"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 4, "date": "2018-09-24", "time": "03:13 UTC (Sept 23, 11:13 p.m. EDT)", "type": "Original standalone tweet",
+      "text": "Also really want to thank @SenateDems for showing this generation of conservatives who you really are and what you're willing to do to people—most don't remember Bork or Clarence Thomas so it's nice to have a refresh of what monstrous evil you're comfortable with.",
+      "context": "Begins 'Also,' suggesting a preceding related post; no archived predecessor was found.",
+      "status_url": "https://x.com/lyndseyfifield/status/1044062142037667840",
+      "evidence": [{"label": "Wayback capture (full HTML permalink)", "url": "https://web.archive.org/web/20210107052754/https://twitter.com/lyndseyfifield/status/1044062142037667840"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 5, "date": "2018-09-24", "time": "03:17 UTC (Sept 23, 11:17 p.m. EDT)", "type": "Reply, thread of item 4",
+      "text": "The orchestrated smearing of a good man to make the public believe he's a sexual predator (when he isn't) is yes, a monstrous evil.",
+      "context": "Reply to user @fcpcolo, who had replied to item 4: 'The sexual predator you're ok with. It's the female victims of sexual assault that are monstrous evil?' Independently corroborated verbatim by NBC News, June 11, 2026 (Natasha Korecki).",
+      "status_url": "https://x.com/lyndseyfifield/status/1044063356305502215",
+      "evidence": [
+        {"label": "Same archived permalink page as item 4", "url": "https://web.archive.org/web/20210107052754/https://twitter.com/lyndseyfifield/status/1044062142037667840"},
+        {"label": "NBC News corroboration (Jun 11, 2026)", "url": "https://www.nbcnews.com/politics/2026-election/supreme-court-justice-brett-kavanaugh-maine-senate-race-susan-collins-rcna349070"}
+      ],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 6, "date": "2018-09-24", "time": "11:55 UTC (7:55 a.m. EDT)", "type": "Reply",
+      "text": "@JustinBeagley @luvman33wife @SenateDems If you don't think these baseless smears have ruined his reputation irrevocably you're truly, truly demented/naive/blindly partisan.",
+      "context": "Reply to @JustinBeagley in item 4's conversation. Full text recovered from extended_tweet.full_text in the archived API JSON.",
+      "status_url": "https://x.com/lyndseyfifield/status/1044193598252699648",
+      "evidence": [{"label": "Wayback capture (API JSON)", "url": "https://web.archive.org/web/20180924115528/https://twitter.com/lyndseyfifield/status/1044193598252699648"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 7, "date": "2018-09-25", "time": "18:05 UTC (2:05 p.m. EDT)", "type": "Reply to @neeratanden",
+      "text": "Last week: OMG SHE MUST BE ALLOWED TO TESTIFY / Five days ago: OMG HOW DARE THEY BULLY HER TO TESTIFY / Three days ago: OMG THESE OLD MEN ARE GOING TO BULLY HER! / Today: OMG HOW DARE THEY TRY TO LET A WOMAN TALK TO HER! / You guys... know we can *see you* right?",
+      "context": "Tanden's tweet (shown on archived page): 'Dr. Ford should testify and refuse to answer questions by anyone who is not a senator. Senators who hide behind a female attorney are cowards.'",
+      "status_url": "https://x.com/lyndseyfifield/status/1044649214779822080",
+      "evidence": [{"label": "Wayback capture (full HTML permalink; 2 captures)", "url": "https://web.archive.org/web/20181127183749/https://twitter.com/lyndseyfifield/status/1044649214779822080"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 8, "date": "2018-09-27", "time": "16:30 UTC (12:30 p.m. EDT)", "type": "Quote-tweet of @JerryDunleavy, posted during the Ford–Kavanaugh hearing",
+      "text": "This is a horrific failure on part of her legal team and Senate Dems. They have openly, blatantly used this woman.",
+      "context": "Quoted tweet (shown on archived page): 'Dr. Christine Blasey Ford just said that she would've been willing to have Senate Judiciary Committee investigators come to California to speak with her, but that it hadn't been made clear to her that they were willing to do so.'",
+      "status_url": "https://x.com/lyndseyfifield/status/1045350095577845761",
+      "evidence": [{"label": "Wayback capture (full HTML permalink)", "url": "https://web.archive.org/web/20201010183045/https://twitter.com/lyndseyfifield/status/1045350095577845761"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 9, "date": "2018-10-02", "time": "10:38 UTC (6:38 a.m. EDT)", "type": "Original standalone tweet",
+      "text": "Our nation's Lindsey Graham resources are running critically low. / We need more. How can we make more?!",
+      "context": "Does not mention Kavanaugh or Ford. Posted during the confirmation-fight week following Sen. Lindsey Graham's widely covered Sept 27 hearing remarks; the connection is contextual/inferential, so this item is included only as periphery.",
+      "status_url": "https://x.com/lyndseyfifield/status/1047073310922682368",
+      "evidence": [{"label": "Wayback capture (API JSON)", "url": "https://web.archive.org/web/20181002103825/https://twitter.com/lyndseyfifield/status/1047073310922682368"}],
+      "grade": "VERBATIM-ARCHIVED", "contextual": true
+    },
+    {
+      "n": 10, "date": "2018-10-04", "time": "22:26 UTC (6:26 p.m. EDT)", "type": "Reply to @ananavarro",
+      "text": "What's horrible is that you KNOW this is untrue—and you know your followers are too stupid to *know* it's untrue. / And you're taking advantage of them.",
+      "context": "Navarro's tweet (shown on archived page): 'What do -The Catholic Journal -The largest organization of Christian churches -Former Supreme Court Justice John Paul Stevens all have in common? They all think Kavanaugh should not be on the Supreme Court. None of them are Liberals. None of them are pro Roe v Wade.'",
+      "status_url": "https://x.com/lyndseyfifield/status/1047976255814029312",
+      "evidence": [{"label": "Wayback capture (full HTML permalink; 2 captures)", "url": "https://web.archive.org/web/20181019013605/https://twitter.com/lyndseyfifield/status/1047976255814029312"}],
+      "grade": "VERBATIM-ARCHIVED"
+    },
+    {
+      "n": 11, "date": "2018-10-07", "time": "published 23:40 UTC (7:40 p.m. EDT)", "type": "Statement to the New York Post (press quote, not a tweet)",
+      "text": "But in the wake of the baseless, 11th-hour accusations orchestrated to stop Kavanaugh's confirmation, we couldn't stay silent anymore.",
+      "context": "From Karol Markowicz's NY Post column 'Another casualty of the Kavanaugh fight: the media's what-women-think scam.' The column describes Inez Stepman and Fifield as co-founders of Ladies for Kavanaugh, formed 'on their own time' apart from their day jobs (Stepman at Independent Women's Forum, Fifield at the Heritage Foundation). This is the primary source of the 'Ladies for Kavanaugh' quote that 2026 coverage sometimes presents as a tweet.",
+      "status_url": "https://nypost.com/2018/10/07/another-casualty-of-the-kavanaugh-fight-the-medias-what-women-think-scam/",
+      "evidence": [{"label": "Wayback capture of the NY Post column (Oct 24, 2018)", "url": "https://web.archive.org/web/20181024133134/https://nypost.com/2018/10/07/another-casualty-of-the-kavanaugh-fight-the-medias-what-women-think-scam/"}],
+      "grade": "VERBATIM-QUOTED"
+    },
+    {
+      "n": 12, "date": "2018-10-08", "time": "11:23 UTC (7:23 a.m. EDT)", "type": "Quote-tweet of @NateSilver538, two days after the confirmation vote",
+      "text": "Guys we weren't magnanimous enough to the people who are *reviews the past month's news* flinging baseless allegations of gang rape, calling for elected officials to be harassed where ever they go, promising to “impeach” Kavanaugh, and calling Sen. Collins a rape apologist.",
+      "context": "Quoted tweet (shown on archived page): 'The football-spiking after Kavanaugh was confirmed this weekend was one such example. There's always *some* of that after a big policy/electoral win, but there's also usually a fair amount of magnanimity and reaching out to the losing side. Not so this time.'",
+      "status_url": "https://x.com/lyndseyfifield/status/1049258991472312320",
+      "evidence": [{"label": "Wayback capture (full HTML permalink; 2 captures)", "url": "https://web.archive.org/web/20181009012329/https://twitter.com/lyndseyfifield/status/1049258991472312320"}],
+      "grade": "VERBATIM-ARCHIVED"
+    }
+  ],
+  "professional_note": "Fifield's Twitter bio throughout this window (per the archived JSON) read: 'Digital at @Heritage, podcasting at @LadyBrainsCast, advocating for abused & neglected children at @CASAforchildren, ending animal testing at @WhiteCoatWaste.' She was the Heritage Foundation's social media manager; posts on Heritage's institutional accounts during the Kavanaugh fight were made in a professional capacity and are not individually attributable to her, so none are itemized here. Her Daily Signal author page shows no Kavanaugh-related bylines. All twelve items above are from her personal account or personal statements to press.",
+  "comparison_2026": {
+    "raised_by_others": [
+      {"who": "Platner campaign (statement on the Washington Post's reporting of Fifield's condom-removal allegation, Jul 7, 2026)", "text": "This claim is categorically false and politically motivated, coming from the co-founder of Ladies for Kavanaugh…", "evidence": "As posted by The Hill's Caroline Vakil, x.com/CarolineVakil/status/2074619314913649056 (partial, as shown in the X post title)", "grade": "VERBATIM-QUOTED"},
+      {"who": "Platner campaign to CNN (Jul 7, 2026)", "text": "Called Fifield's allegations “categorically false” and said they come “from a person with a well-documented political agenda.”", "evidence": "CNN articleBody, cnn.com/2026/07/07/us/graham-platner-lyndsey-fifield-allegations-invs", "grade": "VERBATIM-QUOTED"},
+      {"who": "NBC News, Jun 11, 2026 (Natasha Korecki)", "text": "While prominent Democrats have not gone after Fifield over her activism for Kavanaugh, outside progressives have been less shy about it. Now it is Platner's supporters who are accusing Fifield of leveling eleventh-hour false accusations.", "evidence": "nbcnews.com/politics/2026-election/supreme-court-justice-brett-kavanaugh-maine-senate-race-susan-collins-rcna349070", "grade": "VERBATIM-QUOTED"}
+    ],
+    "no_direct_response_note": "No statement by Fifield directly addressing the Kavanaugh comparison was found in the coverage searched (CNN, NBC, Fox News, The Hill, Newsweek, Zeteo, Daily Kos, Twitchy, Raw Story). NBC News, June 11, 2026: 'Fifield did not respond to a request for comment for this story.' Her adjacent 2026 statements responding to political-motive criticism generally are recorded below for fairness; none is Kavanaugh-specific.",
+    "her_statements": [
+      {"when": "CNN interview, Jul 7, 2026 — on the online attacks citing her political history", "text": "It felt very violating and it felt very dismissive. It was like they minimized what were clearly very painful, I mean, probably the most painful memories of my life.", "grade": "VERBATIM-QUOTED"},
+      {"when": "CNN interview, Jul 7, 2026 — on motive", "text": "I wanted to tell the truth because it felt like watching him lie was just so difficult for me. I don't care about the Maine Senate race, that's not on my radar — I'm going to Pilates with my kids.", "grade": "VERBATIM-QUOTED"},
+      {"when": "X, Jun 5, 2026, 08:08 UTC (status 2062808677451481364)", "text": "The journalists I trusted who convinced me to share a story I never wanted to tell methodically delayed and twisted this into a gift to the Platner campaign.", "grade": "VERBATIM-QUOTED"},
+      {"when": "X, Jun 5, 2026, 11:51 UTC (status 2062864795615756666, reply to @CorieWhalen, on other potential accusers)", "text": "@CorieWhalen Thankfully I'm connected to two of them and we're deciding what to do next. They're much more vulnerable than me and it's not an easy decision considering what NYT just did to us/me.", "grade": "VERBATIM-QUOTED"},
+      {"when": "X post quoted in Jonathan Turley's op-ed (The Hill, Jun 8, 2026)", "text": "Why does it say 'nobody could corroborate' when I offered them sources that COULD corroborate?", "grade": "VERBATIM-QUOTED"},
+      {"when": "X, Jul 7, 2026, 11:38 UTC (status 2074458074983596378, thread, via Twitchy)", "text": "I actually understand why Democrat leaders didn't take our stories seriously when the Times reported them in June but are taking them seriously now. It was by design.", "grade": "VERBATIM-QUOTED"}
+    ]
+  },
+  "gaps": [
+    "Coverage is capture-limited: the Wayback Machine has no snapshot of her profile timeline between Apr 2, 2018 and 2019; only 38 individual Sept–Oct 2018 statuses were ever archived. This ledger is what survives in archives, not a complete inventory.",
+    "Whether the 2018 tweets remain live, deleted, or restricted today is unverified (live x.com not fetchable in the research environment).",
+    "Two Kavanaugh-window statuses are unrecoverable: Sept 26, 2018 (eve of the Ford hearing) and Oct 9, 2018 — topics unknown, not included.",
+    "Item 1's retweet text is truncated at 140 characters in the archive; item 4 begins 'Also,' implying a preceding post not found in any archive.",
+    "No 2026 direct response from Fifield on the Kavanaugh comparison was located; if she addresses it later, this page should be updated.",
+    "Beyond the NY Post description and her quoted founding statement, no separate 2018 statements, letters, or websites of 'Ladies for Kavanaugh' were located in this pass."
+  ]
+}
