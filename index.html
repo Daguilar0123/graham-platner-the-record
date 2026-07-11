@@ -354,6 +354,7 @@ function renderCatalog(A){
             <span class="tag">${esc(r.type)}</span>
             <span class="tag ${r.sourcing&&r.sourcing.includes("named")?"good":"warn"}">${esc(r.sourcing||"sourcing unverified")}</span>
             ${r.response_in_story===true?'<span class="tag good">his response in story</span>':r.response_in_story===false?'<span class="tag bad">no response in story</span>':'<span class="tag">response: unverified</span>'}
+            ${r.archive?`<a class="tag acc" style="text-decoration:none" href="${esc(r.archive)}">archived copy ↗</a>`:""}
           </div>
           <p class="sum">${esc(r.summary)}${r.authors?` <span class="mono" style="font-size:11px">— ${esc(r.authors.join(", "))}</span>`:" — byline pending"}</p>
           ${r.note?`<p class="sum" style="font-size:12.5px">${esc(r.note)}</p>`:""}
