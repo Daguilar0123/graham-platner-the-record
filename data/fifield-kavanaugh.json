@@ -115,7 +115,8 @@
       "context": "Owner-flagged status recovered from the LIVE post on X, read 2026-07-11 — the only recovery path left after the Wayback Machine came up empty and the provided archive links resolved to other tweets. This is the one item still needing an archival snapshot; until then the entry depends on the post staying up.",
       "status_url": "https://x.com/lyndseyfifield/status/1044290567608389637",
       "live_status": "live on X — checked 2026-07-11",
-      "archive_today": [],
+      "archive_today": ["https://archive.ph/8I3iQ"],
+      "archive_note": "Snapshot owner-captured 2026-07-11; not yet independently read (archive.today CAPTCHA-blocked the verification session), so the link-to-tweet mapping awaits a one-glance confirmation. Text above was read from the live post.",
       "evidence": [],
       "grade": "VERBATIM-LIVE", "owner_pick": true,
       "analysis": {
@@ -180,11 +181,22 @@
       "grade": "VERBATIM-QUOTED"
     },
     {
-      "n": 17, "date": "2018-10-08", "time": "11:23 UTC (7:23 a.m. EDT)", "type": "Quote-tweet of @NateSilver538, two days after the confirmation vote",
+      "n": 17, "date": "2018-10-08", "time": "11:23 UTC (7:23 a.m. EDT)", "type": "Quote-tweet of @NateSilver538, two days after the confirmation vote", "featured": true,
       "text": "Guys we weren't magnanimous enough to the people who are *reviews the past month's news* flinging baseless allegations of gang rape, calling for elected officials to be harassed where ever they go, promising to “impeach” Kavanaugh, and calling Sen. Collins a rape apologist.",
       "context": "Quoted tweet (shown on archived page): 'The football-spiking after Kavanaugh was confirmed this weekend was one such example. There's always *some* of that after a big policy/electoral win, but there's also usually a fair amount of magnanimity and reaching out to the losing side. Not so this time.'",
       "status_url": "https://x.com/lyndseyfifield/status/1049258991472312320",
       "live_status": "deleted from X — the account is live but this status returns a 404; checked 2026-07-11 (when and by whom it was removed is not determinable)",
+      "thread": [
+        {"who": "@IanSalyers, replying to her (14:56 UTC)", "hers": false, "text": "Hey. Witnesses are a base. Someone said he did it. It's not baseless. Just cause you guys don't listen to or respect survivors doesn't mean you can change the definition of evidence. Witnesses are evidences. Someone saying \"he did it\" is evidence."},
+        {"who": "Lyndsey Fifield (15:22 UTC) — her fullest evidentiary statement of the period", "hers": true, "text": "Sure witnesses are important—the dozens of witnesses who said it didn't happen in Ramirez' case matter. The four witnesses who said it didn't happen (even the woman she tried to convince to lie) in Ford's case matter. Swetnick's inability to name ONE other person matters."},
+        {"who": "Lyndsey Fifield (22:29 UTC, later in the thread — peripheral: de-escalating a fight between two repliers)", "hers": true, "text": "Don't take the bait to let this very mean and weird person doxx you, Mr. Fedup. Tis not worth it. He has created his own reality and we should let him live there in his insistence on being unhappy and carry on with our lives."}
+      ],
+      "analysis": {
+        "about": "Two days after the confirmation vote, she rejects Nate Silver's observation that the winning side showed little magnanimity — by cataloging the other side's conduct: 'flinging baseless allegations of gang rape' (the Swetnick claim), harassment of officials, impeachment promises, and attacks on Sen. Collins. The ensuing exchange contains her fullest evidentiary statement of the period (15:22 UTC), covering all three accusers by name.",
+        "purpose": "To argue that magnanimity was unwarranted because the opposition's conduct — above all what she considered evidence-free accusations — forfeited it. When a replier objects that 'someone saying he did it is evidence,' she answers with a symmetrical evidentiary counter: witnesses who do not corroborate are evidence too, and they cut the other way.",
+        "posture_and_position": "POSTURE: combative and sarcastic ('*reviews the past month's news*'), grievance-framed even in victory; toward an allied replier being baited into a doxxing fight, protective and de-escalating (22:29). ACTUAL POSITION, in her own words: an uncorroborated allegation is 'baseless,' and named witnesses failing to corroborate counts affirmatively against the accusation — 'the dozens of witnesses who said it didn't happen in Ramirez' case matter. The four witnesses who said it didn't happen… in Ford's case matter. Swetnick's inability to name ONE other person matters.' DESCRIPTIVE NOTES: the named witnesses' 2018 statements were phrased as lacking recollection or denying attendance, which her wording renders as 'said it didn't happen'; and 'the woman she tried to convince to lie' attributes to Ford an intent that goes beyond what the underlying reporting about contacts with Leland Keyser established.",
+        "confidence": "HIGH on posture and stated position (her own archived words); the two descriptive notes flag exactly where her characterizations exceed the underlying record."
+      },
       "evidence": [{"label": "Wayback capture (full HTML permalink; 2 captures)", "url": "https://web.archive.org/web/20181009012329/https://twitter.com/lyndseyfifield/status/1049258991472312320"}, {"label": "preservation copy in this repo", "url": "documents/wayback-20181009-fifield-status-1049258991472312320.html"}],
       "grade": "VERBATIM-ARCHIVED"
     }
