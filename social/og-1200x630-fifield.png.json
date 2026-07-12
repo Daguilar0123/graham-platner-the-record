@@ -1,0 +1,25 @@
+{
+  "file": "og-1200x630-fifield.png",
+  "title": "The Fifield–Kavanaugh File — archival specimen card",
+  "description": "OG card for the Fifield–Kavanaugh file: an archival tweet-specimen card with grade chips (VERBATIM-ARCHIVED, DELETED FROM X) and archive links.",
+  "alt_text": "Dark card titled “The Fifield–Kavanaugh File.” Subtitle: what she said in 2018, recovered from the archives, and what she said in 2026 — linked, dated, graded. Below is a specimen card labeled number 17, September 2018, archived capture, with chips reading VERBATIM-ARCHIVED and DELETED FROM X, and links to the original post, Wayback capture, and archive.today snapshot.",
+  "width_px": 1200,
+  "height_px": 630,
+  "format": "PNG",
+  "creator": "Daniel Ismael Aguilar",
+  "creator_url": "https://grownfromconcrete.org",
+  "copyright": "© 2026 Daniel Ismael Aguilar",
+  "credit": "Daniel Ismael Aguilar · grownfromconcrete.org",
+  "copyright_year": 2026,
+  "date_created": "2026-07-12",
+  "source_page": "https://daguilar0123.github.io/graham-platner-the-record/",
+  "keywords": [
+    "Graham Platner",
+    "The Platner Record",
+    "Maine Senate 2026",
+    "verification ledger",
+    "declared standpoint",
+    "documentation project"
+  ],
+  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+}

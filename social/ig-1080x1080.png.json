@@ -1,0 +1,25 @@
+{
+  "file": "ig-1080x1080.png",
+  "title": "Every box is unchecked",
+  "description": "Instagram square: a giant amber unchecked verification box — the site’s central visual argument.",
+  "alt_text": "Square dark card titled “Every allegation carries a verification box.” A giant empty amber square dominates the center. Below, in amber italics: Every box is unchecked. Then: no charge, no court finding, no independent verification — in any direction, as of Jul 11 2026. Allegations as allegations. Denials as denials.",
+  "width_px": 1080,
+  "height_px": 1080,
+  "format": "PNG",
+  "creator": "Daniel Ismael Aguilar",
+  "creator_url": "https://grownfromconcrete.org",
+  "copyright": "© 2026 Daniel Ismael Aguilar",
+  "credit": "Daniel Ismael Aguilar · grownfromconcrete.org",
+  "copyright_year": 2026,
+  "date_created": "2026-07-12",
+  "source_page": "https://daguilar0123.github.io/graham-platner-the-record/",
+  "keywords": [
+    "Graham Platner",
+    "The Platner Record",
+    "Maine Senate 2026",
+    "verification ledger",
+    "declared standpoint",
+    "documentation project"
+  ],
+  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+}
