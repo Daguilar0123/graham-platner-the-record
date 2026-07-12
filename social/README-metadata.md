@@ -32,8 +32,11 @@ Each GIF carries an embedded comment block: “(c) 2026 Daniel Ismael Aguilar - 
 
 | Image | Argument | Sidecar |
 |---|---|---|
-| yt-thumb-demanded-1280x720.png | Q1 — withdrawal demanded, investigation never | yt-thumb-demanded-1280x720.png.json |
-| yt-thumb-evidence-1280x720.png | Q2 — “reviewed the evidence” vs testing it | yt-thumb-evidence-1280x720.png.json |
+| yt-thumb-demanded-1280x720.jpg | Q1 — withdrawal demanded, investigation never | yt-thumb-demanded-1280x720.jpg.json |
+| yt-thumb-evidence-1280x720.jpg | Q2 — “reviewed the evidence” vs testing it | yt-thumb-evidence-1280x720.jpg.json |
+
+*(2026-07-12: the two YT thumbnails were re-encoded PNG→JPEG q80 for web weight — 720K/692K → ~160K each;
+photo composites carry no transparency, so nothing is lost. Attribution EXIF/XMP embedded via exiftool.)*
 
 ## Revision 2026-07-12 (clarity pass)
 
