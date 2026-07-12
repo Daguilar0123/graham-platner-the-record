@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "method": "Every allegation and every piece of claimed corroboration in the public record, with the reporter's own words on provenance. Class labels describe what reporters SAID they had; they are not a ruling on whether any allegation is true. 'Independently verified' means examined by an investigation independent of the outlet that published the story (law enforcement, court process, or a disinterested third-party review) — not the outlet's own account of its reporting. No charge, court finding, or adjudication exists anywhere in this record.",
   "classes": {
     "EXAMINED": "Reporter says they personally saw the document/item",
@@ -31,8 +31,8 @@
         {
           "item": "Therapist email exchange",
           "class": "EXAMINED",
-          "provenance": "“We reviewed email exchanges between she and her therapist, referring to what she called this sexual assault and her therapist sort of acknowledging that this had happened to her.” — Wren, on air",
-          "establishes": "Contemporaneous reporting/discussion of the event by her — not independent proof of the act. Emails were produced by Racicot.",
+          "provenance": "“We reviewed email exchanges between she and her therapist, referring to what she called this sexual assault and her therapist sort of acknowledging that this had happened to her.” — Wren, on air. In print, per Politico's own description (as read on air, Breaking Points, Jul 8, 2026): “Racicot showed POLITICO recent emails with her therapist” in which she explained she was talking to the media; “Her therapist responded that Racicot shouldn't have to speak publicly about a traumatic incident in order to be believed, without referencing details of any particular incident.” The therapist declined to comment.",
+          "establishes": "Her discussion of the allegation with her therapist — not independent proof of the act. Emails were produced by Racicot. CORRECTED 2026-07-12: this entry previously read the emails as contemporaneous with the event; Politico's printed description dates them to June 2026, during her conversations with reporters — the on-air characterization was “in almost real time.”",
           "independently_verified": false
         },
         {
@@ -54,6 +54,13 @@
           "class": "RELAYED",
           "provenance": "“She tried to recover those DMs. We were not able to review those DMs, but she described them to us.” — Wren, on air",
           "establishes": "The direct exchange between the two people was never reviewed by the reporters — stated plainly, twice, under questioning.",
+          "independently_verified": false
+        },
+        {
+          "item": "The pre-arrival text exchange (the “massage” message)",
+          "class": "RELAYED",
+          "provenance": "“One night in November or December of 2021, she said she texted him to say that she could use a massage. She said she did not intend it as an invitation, but he interpreted it that way, immediately replying to say he would come right over. She said she wrote back twice, telling him not to. The Post was not able to review the alleged messages or independently verify them. Racicot said she later deleted them soon after the incident.” — The Washington Post, Jul 6, 2026. Politico's story said she “told him not to come over” and described him as “uninvited,” without the preceding message; a Politico reporter's message to the Platner campaign — obtained and authenticated by Ryan Grim (Breaking Points / Drop Site, Jul 8, 2026) — reads: “texting Platner about needing her glute massaged. That detail didn't make our story.” Politico, in response: “This story is based on extensive reporting and interviews and reflects our editorial standards… If presented with information that materially challenges our reporting, we will report it.”",
+          "establishes": "The texts preceding his arrival were deleted (per her account) and never reviewed by any outlet. She volunteered the detail to multiple outlets — Grim: it “strengthens the credibility of her version of events” — one outlet printed a version of it; the outlet of record did not.",
           "independently_verified": false
         },
         {

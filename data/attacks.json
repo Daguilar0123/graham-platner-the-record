@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11",
+  "updated": "2026-07-12",
   "method": "First-pass catalog of major negative national and Maine-outlet stories about Graham Platner from campaign launch (Aug 2025) through withdrawal (formal, Jul 10, 2026). Neutral summaries: allegations recorded as allegations, denials as denials; no judgment about the truth of any allegation or the motive of any journalist or outlet. 'Attack' in the dataset name describes the subject's characterization and the stories' negative valence, not a finding of intent. Some URLs/bylines pending verification — see fields marked null.",
   "waves": [
     {"id": 1, "label": "Oct–Nov 2025 — Reddit posts & the tattoo", "platner_quote": "“Much like October when the first attack started…”"},
@@ -62,10 +62,12 @@
     {"date": "2026-07-08", "outlet": "The Washington Post", "item": "Three opinion pieces Jul 8–9: 'Drop out, Graham Platner…'; 'Platner's accuser… may pay a price'; 'Moving on from Graham Platner'", "type": "opinion"},
     {"date": "2026-07-08", "outlet": "Daily Caller", "item": "Media Malpractice Might Be Underlying Big Story Of Graham Platner Accusations", "type": "media-criticism"},
     {"date": "2026-07-08", "outlet": "Washington Examiner", "item": "How Politico got the Platner story that the New York Times missed", "type": "media-criticism"},
+    {"date": "2026-07-08", "outlet": "Breaking Points / Drop Site News", "item": "EXCLUSIVE: Platner Assault STORY LEFT KEY DETAILS OUT (Ryan Grim, Saagar Enjeti) — Grim reports Politico omitted the pre-arrival text exchange; obtained and authenticated the reporter's message to the campaign (“That detail didn't make our story”); Politico's response appended to the video notes", "type": "media-criticism"},
     {"date": "2026-07-08", "outlet": "ms.now", "item": "Why Graham Platner's progressive supporters ignored glaring warning signs", "type": "opinion"},
     {"date": "2026-07-09", "outlet": "Slate", "item": "I Never Stopped Thinking About Graham Platner's Tattoo. This Week, I Realized Why.", "type": "opinion", "date_approx": true},
     {"date": "2026-07-10", "outlet": "JTA / Forward", "item": "Graham Platner may be gone, but his Nazi tattoo is not fading away", "type": "news-report", "date_approx": true},
-    {"date": "2026-07-10", "outlet": "Newsweek", "item": "The Right Kind of Nazi Tattoo (Shane Croucher, labeled analysis)", "type": "analysis"}
+    {"date": "2026-07-10", "outlet": "Newsweek", "item": "The Right Kind of Nazi Tattoo (Shane Croucher, labeled analysis)", "type": "analysis"},
+    {"date": "2026-07-10", "outlet": "The Majority Report", "item": "Emma Vigeland ↔ Ryan Grim on the omission report: disclosure duty (“the public has a right to the actual scenario”) vs emphasis-as-license-to-dismiss — the media-ethics debate, both directions on the record", "type": "media-criticism"}
   ],
   "pending_verification": [
     "archive.today snapshots: 13 anchor stories captured 2026-07-11 (owner, manual); remaining records still lack snapshots",
