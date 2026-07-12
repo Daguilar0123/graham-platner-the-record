@@ -38,6 +38,12 @@ section{padding:56px 0 8px;border-top:1px solid var(--hair)}
 section:first-of-type{border-top:none}
 .note{font-size:13px;color:var(--muted);max-width:80ch}
 .mono{font-family:var(--mono)}
+nav.projnav{background:var(--ground);border-bottom:1px solid var(--hair)}
+nav.projnav .pn-wrap{max-width:1060px;margin:0 auto;padding:0 20px;display:flex;gap:2px;flex-wrap:wrap;align-items:center}
+nav.projnav .pn-brand{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding:10px 14px 10px 0;border-right:1px solid var(--hair);margin-right:6px}
+nav.projnav a{font-size:13px;color:var(--muted);text-decoration:none;padding:10px 11px;border-bottom:2px solid transparent}
+nav.projnav a:hover{color:var(--ink)}
+nav.projnav a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
 nav.top{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid var(--hair)}
 nav.top .wrap{display:flex;gap:2px;flex-wrap:wrap;padding-top:2px}
 nav.top a{font-size:13px;color:var(--muted);text-decoration:none;padding:10px 11px;border-bottom:2px solid transparent}
@@ -120,6 +126,15 @@ footer.site .wrap{max-width:1060px}
 </head>
 <body>
 
+<nav class="projnav" aria-label="The Platner Record project">
+  <div class="pn-wrap">
+    <span class="pn-brand">The Platner Record</span>
+    <a href="./" aria-current="page">The Record</a>
+    <a href="fifield-kavanaugh.html">Fifield–Kavanaugh File</a>
+    <a href="the-questions.html">The Questions</a>
+    <a href="https://daguilar0123.github.io/graham-platner-campaign-finance/">The Money</a>
+  </div>
+</nav>
 <nav class="top" aria-label="Sections"><div class="wrap">
   <a href="#words">His words</a><a href="#ledger">Verification ledger</a><a href="#money">The money</a>
   <a href="#catalog">The catalog</a><a href="#overlay">The overlay</a><a href="#mandate">The mandate</a><a href="#contribute">Contribute</a>
@@ -169,9 +184,11 @@ footer.site .wrap{max-width:1060px}
   <h3 style="margin-top:34px">His claims, checked</h3>
   <div class="claims">
     <div class="claim"><div class="q">"The things that have been claimed did not happen."</div>
-      <div class="v"><span class="tag warn">the open question</span> &nbsp;Not provable or disprovable on the current record.
-      This is what the <a href="#ledger">verification ledger</a> exists to track: what each allegation's claimed corroboration
-      actually is, and whether anyone independent has verified it.</div></div>
+      <div class="v"><span class="tag warn">the open question — the presumption rule applies</span> &nbsp;The claimed events are
+      this record's open question, and Rule&nbsp;1 above governs it: he denies them, and until an item of claimed corroboration
+      is verified by an investigation independent of the outlet that published it, this page treats the denial as the operative
+      account. The <a href="#ledger">verification ledger</a> tracks exactly that — and as of the last update, every
+      verification box on it is unchecked.</div></div>
     <div class="claim"><div class="q">"Much like October when the first attack started…"</div>
       <div class="v"><span class="tag good">consistent with the record</span> &nbsp;The first negative wave began Oct 16, 2025 —
       CNN and Politico published deleted-Reddit-post stories the same day; 12 major stories followed that month. See <a href="#catalog">the catalog</a>.</div></div>
