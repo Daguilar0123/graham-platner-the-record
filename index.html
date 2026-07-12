@@ -75,6 +75,23 @@ blockquote.pull::before{content:"“";position:absolute;left:0;top:-8px;font-fam
 .presscase .src{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:4px}
 .presscase .vidwrap{position:relative;aspect-ratio:16/9;margin:16px 0 4px}
 .presscase .vidwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:1px solid var(--hair)}
+/* ——— per-question / per-ask share cards (platform-aware copy) ——— */
+.sharecard{margin-top:16px;border-top:1px dashed var(--hair);padding-top:12px}
+.sharecard .sc-lab{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.sc-tabs{display:flex;gap:6px;flex-wrap:wrap}
+.sc-tabs button{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;padding:5px 10px;border:1px solid var(--hair);background:var(--ground);color:var(--muted);border-radius:3px;cursor:pointer}
+.sc-tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent);background:var(--surface);font-weight:700}
+.sc-body{font-size:13px;line-height:1.55;background:var(--ground);border:1px solid var(--hair);border-radius:3px;padding:10px 12px;margin:10px 0;white-space:pre-wrap;color:var(--ink);overflow-wrap:anywhere}
+.sc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sc-actions button,.sc-actions a{font-family:var(--mono);font-size:11px;font-weight:600;padding:7px 12px;border-radius:3px;text-decoration:none;cursor:pointer;line-height:1}
+.sc-copy{border:1px solid var(--accent);background:none;color:var(--accent)}
+.sc-copy:hover{background:var(--accent);color:var(--ground)}
+.sc-open{background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent);display:inline-block}
+.sc-open:hover{opacity:.9}
+.sc-native{border:1px solid var(--hair);background:var(--surface);color:var(--muted)}
+.sc-native:hover{color:var(--ink);border-color:var(--muted)}
+.sc-count{font-family:var(--mono);font-size:10px;color:var(--muted);margin-left:auto}
+.sc-hint{font-size:11.5px;color:var(--muted);margin:8px 0 0;max-width:60ch}
 .funnel{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:10px 0 6px;padding:0}
 .funnel a{display:block;border:1px solid var(--hair);border-top:3px solid var(--accent);background:var(--surface);padding:14px 16px;text-decoration:none;color:var(--ink)}
 .funnel a:hover{border-color:var(--accent)}
@@ -254,7 +271,7 @@ retaliation. <b>Not reporting is not evidence that an accuser is lying.</b> Full
 walks that back. Our questions are for the people with power around this case — not for her.</p>
 
 <h2>The questions we are asking</h2>
-<div class="qcard"><span class="qn">Q1</span>
+<div class="qcard" id="q1"><span class="qn">Q1</span>
   <h3>Why has no one who demanded his withdrawal demanded an investigation?</h3>
   <p>Within hours of publication, officials and party figures called for Platner to leave the race — that
   demand was everywhere. We ran the sweep: in the Bangor Daily News' reaction roundup, every quoted statement
@@ -268,7 +285,7 @@ walks that back. Our questions are for the people with power around this case �
   investigation vindicates it and delivers justice. If you're certain enough to end a candidacy in four days,
   why aren't you certain enough to ask for the process that has subpoenas?</p>
 </div>
-<div class="qcard"><span class="qn">Q2</span>
+<div class="qcard" id="q2"><span class="qn">Q2</span>
   <h3>Why does "we reviewed the evidence" end the inquiry instead of beginning it?</h3>
   <p>Politico says its reporters examined therapist emails and screenshots. We documented their own account of
   what they had — and its limits, in their own words: they could not review the direct messages between the two
@@ -278,7 +295,7 @@ walks that back. Our questions are for the people with power around this case �
   journalism as evidence and journalism as verdict. With stakes this high, asking for one is not slander;
   it is the standard.</p>
 </div>
-<div class="qcard"><span class="qn">Q3</span>
+<div class="qcard" id="q3"><span class="qn">Q3</span>
   <h3>The conditions that silence survivors do not apply here — so what, today, is the barrier?</h3>
   <p>The reasons survivors stay silent are isolation and vulnerability. Whatever was true in 2021, the public
   record of July 2026 shows the opposite conditions now: accounts shared with three national newsrooms, millions
@@ -288,7 +305,7 @@ walks that back. Our questions are for the people with power around this case �
   and still no one in a position of power has moved toward the process that could check a single box on
   <a href="the-record.html#ledger">the ledger</a>. The silence that matters here is not hers. It is theirs.</p>
 </div>
-<div class="qcard"><span class="qn">Q4</span>
+<div class="qcard" id="q4"><span class="qn">Q4</span>
   <h3>If describing it to one officer felt impossible, what made describing it to three newsrooms — and the whole world — possible?</h3>
   <p>This question sits closest to the line we drew above, so we walk it carefully. Her stated reasons for not
   going to police — discomfort describing "such a personal experience" to an officer, fear of retaliation — are
@@ -379,7 +396,7 @@ her statement — consent is the only door, and that is as it should be. So the 
 investigation <i>over her objection</i>. What the public can fairly demand is that the <b>process be ready,
 independent, and transparent</b> — so that the only remaining variable is choice, not access. That is the ask.</p>
 
-<div class="qcard"><span class="qn">Ask 1</span>
+<div class="qcard" id="ask1"><span class="qn">Ask 1</span>
   <h3>A formal, standing, trauma-informed invitation from the Hancock County DA and Maine State Police</h3>
   <p>Not a subpoena — an open door, publicly stated: the office stands ready to receive a complaint at any time,
   with a trauma-informed process. Right now the DA says he wouldn't ordinarily open an investigation absent a
@@ -389,7 +406,7 @@ independent, and transparent</b> — so that the only remaining variable is choi
   unexamined allegation — the invitation should have gone out the same week the candidacy ended. Saying so
   costs nothing and forecloses nothing.</p>
 </div>
-<div class="qcard"><span class="qn">Ask 2</span>
+<div class="qcard" id="ask2"><span class="qn">Ask 2</span>
   <h3>Pre-commit the independence: referral to the Attorney General, who deputizes conflict-free outside counsel</h3>
   <p>Maine's Attorney General is the only one in America selected by the Legislature rather than by voters or a
   governor — structurally outside both a county DA's local politics and any administration's reach. The model
@@ -398,7 +415,7 @@ independent, and transparent</b> — so that the only remaining variable is choi
   kind of process answers the fear that a report would disappear into the same party machinery that had motive to
   manage this story.</p>
 </div>
-<div class="qcard"><span class="qn">Ask 3</span>
+<div class="qcard" id="ask3"><span class="qn">Ask 3</span>
   <h3>Available today, no complaint required: neutral forensic authentication of the documents, by consent</h3>
   <p>The public case rests on documents — therapist emails, contemporaneous screenshots, messages. Documents can
   be authenticated without anyone filing anything: both sides submit the native files to a mutually agreed,
@@ -588,6 +605,176 @@ other way and let the record speak. That is what it means to want the truth more
   </div>
 </footer>
 </div>
+<script>
+// Per-question / per-ask share cards — platform-aware copy.
+// Copy is DATA (T below), the component is generic: it only builds share-intent
+// URLs and handles clipboard/Web-Share. Ported from the Justice4Kat SharePanel spec.
+(function(){
+var SC_BASE='https://daguilar0123.github.io/graham-platner-the-record/';
+var T={
+q1:{anchor:'#q1',subject:'Why has no one demanded an investigation?',
+ x:`Every call on Graham Platner was for withdrawal — made within hours. Nobody called for an investigation. Maine State Police confirm: no complaint received. If 4 days of certainty can end a candidacy, ask for the process with subpoenas. {{url}}`,
+ bsky:`Officials demanded Platner's withdrawal within hours. Not one has asked for an investigation — State Police confirm no complaint received. Certain enough to end a candidacy in 4 days? Ask for subpoenas. {{url}}`,
+ masto:`Within hours of Politico's story, officials demanded Graham Platner leave the Maine Senate race. He was gone in four days.
+
+Not one prominent figure is on record calling for an investigation or a prosecutor's review. The Hancock County DA says he wouldn't ordinarily open a case absent a complaint — and Maine State Police confirm none has been received.
+
+If you believe the allegation, an investigation vindicates it. So why is nobody asking? {{url}}`,
+ long:`Within hours of Politico's July 6 story, officials and party leadership demanded Graham Platner leave the Maine Senate race. He announced suspension in two days and filed formal withdrawal in four.
+
+Here is what nobody did: not one prominent figure — not the officials who demanded withdrawal, not the party committees, not the outlets — is on record calling for a criminal referral, an investigation, or a prosecutor's review. The Hancock County DA says he would not ordinarily open a case absent a complaint. Maine State Police confirm no complaint has been received.
+
+If you believe the allegation, an investigation vindicates it and delivers actual justice. If you were certain enough to end a candidacy carrying 156,084 primary votes in four days, why not certain enough to ask for the one process that has subpoenas?
+
+The full documented record — every allegation, every denial, every source: {{url}}`,
+ sms:`Every official demanded Platner's withdrawal within hours. None asked for an investigation. Maine State Police confirm no complaint was ever filed. If the certainty was real, why not ask for the process with subpoenas? {{url}}`},
+q2:{anchor:'#q2',subject:'"We reviewed the evidence" is a claim, not a verification',
+ x:`Politico's reporters say they reviewed therapist emails and screenshots. By their own account, they never saw the direct messages between the two people involved. A newsroom's word ended 156,084 votes. Reviewed is not tested. {{url}}`,
+ bsky:`"We reviewed the evidence." By the reporters' own account, they never saw the direct messages — and no one outside the newsroom has examined any of it. Reviewed is not tested. {{url}}`,
+ masto:`Politico's case rests on corroborating evidence its reporters say they reviewed: therapist emails, screenshots, consistent interviews. By their own on-air account, they could not review the direct messages between the two people involved.
+
+No investigator independent of the newsroom has examined any of it. For an ordinary story, a newsroom's word is enough. For ending a 156,084-vote primary mandate, it is not.
+
+Reviewed is not tested. {{url}}`,
+ long:`Politico's public case rests on corroborating evidence its reporters say they reviewed: email exchanges with a therapist, screenshots of messages, interviews that stayed consistent. Take that seriously — and then notice what it is not.
+
+By the reporters' own on-air account, they could not review the direct messages between the two people involved. No investigator independent of the newsroom — no law enforcement, no court, no neutral forensic examiner — has examined any of the material. Everything ultimately rests on "take our word for it."
+
+For an ordinary story, a newsroom's word is enough. For ending the largest primary mandate in Maine Democratic history and labeling a man a rapist, it is not. Digital evidence is testable — under warrant, with chain of custody, by people whose careers depend on getting it right rather than getting it published.
+
+Reviewed is not tested. The documented record: {{url}}`,
+ sms:`"We reviewed the evidence," says the outlet. Their own account: they never saw the direct messages. No independent review has touched any of it. Reviewed is not tested. {{url}}`},
+q3:{anchor:'#q3',subject:'Every barrier is gone — so what, today, is the barrier to the process?',
+ x:`Survivors stay silent out of isolation and vulnerability. Here: three national newsrooms, aligned institutions, the accused gone from public life. Every barrier dismantled — and nobody with power has moved toward the process. {{url}}`,
+ bsky:`Three national newsrooms, aligned institutions, the accused out of public life. Every barrier that explains survivor silence, publicly dismantled — and no one in power has moved toward the process. {{url}}`,
+ masto:`Survivor silence has real causes: isolation, vulnerability, proximity to the accused. This questions no accuser's 2021 silence — full stop.
+
+But July 2026 shows the opposite conditions: three national newsrooms, institutions aligned, the accused out of public life.
+
+Every barrier that explains the absence of a report has been dismantled — and no one in power has moved toward the process. The silence that matters is not hers. It is theirs. {{url}}`,
+ long:`The reasons survivors never report are real and documented: trauma, isolation, disbelief, proximity to the accused, a small community where everyone knows everyone. This argument does not question any accuser's silence in 2021 — full stop.
+
+But look at the public record of July 2026. The accounts have been shared with three national newsrooms. There are millions in sympathetic attention. Institutions are aligned in support. The accused is out of public life and can come nowhere near anyone.
+
+Every barrier that normally explains the absence of a report has been publicly dismantled — and still no one in a position of power has moved toward the process that could actually verify a single claim. This is not a question about any accuser. It is a question about the institutions around them.
+
+The silence that matters here is not hers. It is theirs. The documented record: {{url}}`,
+ sms:`Every barrier that explains survivor silence has been publicly dismantled here — 3 newsrooms, aligned institutions, the accused gone. Still nobody in power has asked for the process. The silence that matters isn't hers. It's theirs. {{url}}`},
+q4:{anchor:'#q4',subject:'Someone built the road to the newsroom. Nobody built the road to the courthouse.',
+ x:`Documented: an advocate's infrastructure connected accusers with reporters — CNN and CJR both reported it. Someone built the road to the newsroom. Nobody built the road to the courthouse. {{url}}`,
+ bsky:`CNN and CJR both documented it: an advocate's infrastructure connected accusers with reporters. Someone built the road to the newsroom. Nobody built the road to the courthouse. {{url}}`,
+ masto:`Talking to a reporter and talking to the state are not the same act — one offers narrative control, the other is adversarial and forensic. Choosing the first proves nothing by itself.
+
+But CNN and the Columbia Journalism Review both documented that an advocate's infrastructure existed to connect accusers with reporters.
+
+Someone built the road to the newsroom. Nobody built the road to the courthouse. That asymmetry was constructed by the people around this case. {{url}}`,
+ long:`Talking to a sympathetic reporter and talking to the state are not the same act. A journalist offers narrative control and no cross-examination; a criminal process is adversarial, exposes the accuser's own records to forensic scrutiny, and runs on its own timetable. Choosing the first over the second is not, by itself, evidence of anything.
+
+What turns this from a question about any accuser into a question about institutions is a documented fact from the record: an advocate's infrastructure existed to connect accusers with reporters — CNN identified the person; the Columbia Journalism Review examined the role in detail.
+
+Someone built the road to the newsroom. Nobody built the road to the courthouse. No official offered a trauma-informed process, no prosecutor publicly opened the door, no supporter with power treated a criminal referral as the natural next step of believing an accuser.
+
+The asymmetry between those two roads was constructed by the people around this case. The documented record: {{url}}`,
+ sms:`Documented: an advocate's infrastructure connected accusers with reporters. Someone built the road to the newsroom. Nobody built the road to the courthouse. That asymmetry was constructed. {{url}}`},
+ask1:{anchor:'#ask1',subject:'Ask 1: announce the open door — publicly, now',
+ x:`Maine law does not require a victim's complaint for the State to act — the DA's "absent a complaint" posture is custom, not law. The ask: announce the door is open, staffed, trauma-informed — now. 156,084 votes hang on an unexamined allegation. {{url}}`,
+ bsky:`The DA's "absent a complaint" posture is custom, not law — in Maine the charge belongs to the State, not the accuser. The ask: say publicly the door is open, staffed, trauma-informed. Now. {{url}}`,
+ masto:`Ask 1, to the Hancock County DA and Maine State Police: announce a standing, trauma-informed invitation — the office stands ready to receive a complaint at any time.
+
+"Absent a complaint" is custom, not law: in Maine the charge belongs to the State, and Maine courts have sustained convictions without a cooperating complainant.
+
+In this case, 156,084 votes hang on an unexamined allegation. Saying the door is open costs nothing and forecloses nothing. {{url}}`,
+ long:`Ask 1, addressed to the Hancock County District Attorney and the Maine State Police: announce a formal, standing, trauma-informed invitation — the office stands ready to receive a complaint at any time, with a process built for it.
+
+Right now the DA says he would not ordinarily open an investigation absent a complaint, and State Police confirm none has been received. But "absent a complaint" is custom, not a legal barrier. In Maine, as everywhere in America, a criminal charge belongs to the State, not to the accuser — Maine's highest court puts the word "press" in quotation marks when describing what victims ask for, and Maine courts have sustained convictions where the complainant refused to testify or recanted outright.
+
+The no-pressure posture is right toward an accuser. It is wrong toward officials. In an ordinary case, official patience costs nothing. In this one, 156,084 primary votes hang on an unexamined allegation.
+
+Say publicly that the door is open and staffed. That costs nothing and forecloses nothing. {{url}}`,
+ sms:`The DA's "no case without a complaint" posture is custom, not law — in Maine the charge belongs to the State. Ask 1: announce the door is open, staffed, trauma-informed, now. {{url}}`},
+ask2:{anchor:'#ask2',subject:'Ask 2: pre-commit the independence — AG referral, conflict-free outside counsel',
+ x:`Maine's AG is the only one in America chosen by the Legislature — outside county politics and any administration. Pre-commit now: any complaint triggers conflict-free outside counsel with subpoena power and a public report. {{url}}`,
+ bsky:`Maine's AG — the only one in America selected by the Legislature — should pre-commit: any complaint triggers deputized, conflict-free outside counsel with subpoena power and a public report. {{url}}`,
+ masto:`Ask 2: pre-commit the independence, in advance and in public.
+
+Maine's Attorney General is the only one in America selected by the Legislature — structurally outside a county DA's politics and any administration's reach.
+
+New York's Cuomo investigation proved the model: deputized outside lawyers, subpoena power, a public report. Pre-committing that any complaint triggers the same answers the fear that a report would vanish into party machinery. {{url}}`,
+ long:`Ask 2: pre-commit the independence — in advance, in public.
+
+Maine's Attorney General is the only attorney general in America selected by the Legislature rather than by voters or a governor — structurally outside both a county DA's local politics and any administration's reach.
+
+The model exists and has worked before: New York's investigation of Gov. Cuomo, where the Attorney General deputized independent outside lawyers with subpoena power, who produced a public report on their own authority.
+
+Announcing in advance that any complaint triggers that kind of process answers the one fear that keeps this frozen — that a report would disappear into the same party machinery that had motive to manage this story. Pre-commitment is what makes the open door credible. {{url}}`,
+ sms:`Ask 2: Maine's AG — the only one in America picked by the Legislature — should pre-commit: any complaint triggers conflict-free outside counsel with subpoena power + a public report. The Cuomo model. {{url}}`},
+ask3:{anchor:'#ask3',subject:'Ask 3: forensic authentication by consent — possible today, no complaint required',
+ x:`Available today, no complaint required: both sides hand the native files to an agreed independent forensic examiner, findings published. Platner could start it — his own devices first. If the evidence is real, authentication vindicates it. {{url}}`,
+ bsky:`Ask 3 needs no one's permission: neutral forensic authentication by consent. Both sides submit native files to an agreed examiner; findings published. Platner could start today — his devices first. {{url}}`,
+ masto:`Ask 3 — the one pressed hardest, because it needs no complaint and no one's permission.
+
+The public case rests on documents. They can be authenticated without anyone filing anything: both sides submit native files to an agreed independent examiner, findings published by prior agreement.
+
+The documents were already shared with newsrooms; authentication only asks that someone neutral examine them. Platner could start today — his own devices first. {{url}}`,
+ long:`Ask 3 — the one this page presses hardest, because it needs no complaint, no prosecutor, and no one's permission.
+
+The public case rests on documents: therapist emails, contemporaneous screenshots, messages. Documents can be authenticated without anyone filing anything — both sides submit the native files to a mutually agreed, independent digital-forensics examiner, with publication of findings agreed in advance.
+
+This follows the road already taken. The only process anyone in this story has actually used is disclosure to the press: these documents were already voluntarily shared with national newsrooms. Authentication asks for nothing that has not already been handed to journalists — only that what reporters describe be examined by someone neutral, under rules both sides accept.
+
+Platner could start it today, unilaterally, by offering his own devices and accounts to such an examiner first. If the evidence is what we are told it is, authentication vindicates it. If it isn't, the country deserves to know that too. {{url}}`,
+ sms:`Ask 3, possible today, no complaint needed: both sides give the native files to an agreed independent forensic examiner, findings published. Platner could start — his devices first. {{url}}`}
+};
+var PLATFORMS=[{k:'x',label:'X / Twitter'},{k:'bsky',label:'Bluesky'},{k:'masto',label:'Mastodon'},{k:'fb',label:'Facebook'},{k:'email',label:'Email'},{k:'sms',label:'Text'}];
+function bodyFor(t,k){var b=(k==='fb'||k==='email')?t.long:t[k];return b.replace(/\{\{url\}\}/g,SC_BASE+t.anchor);}
+function actionFor(t,k){var b=bodyFor(t,k),u=SC_BASE+t.anchor;
+  switch(k){
+    case 'x':return{href:'https://twitter.com/intent/tweet?text='+encodeURIComponent(b),open:'Post on X'};
+    case 'bsky':return{href:'https://bsky.app/intent/compose?text='+encodeURIComponent(b),open:'Post on Bluesky'};
+    case 'masto':return{href:null,hint:'Mastodon has no share link that works across servers. Copy the text and paste it into a post on your home server.'};
+    case 'fb':return{href:'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(u),open:'Share on Facebook',hint:'Facebook’s share window only attaches the link. Copy the text first, then paste it into the post.'};
+    case 'email':return{href:'mailto:?subject='+encodeURIComponent(t.subject||'')+'&body='+encodeURIComponent(b.replace(/\r?\n/g,'\r\n')),open:'Open in your email app',sameTab:true,hint:'If the email opens cut off or blank, copy the text and paste it instead.'};
+    case 'sms':return{href:'sms:?&body='+encodeURIComponent(b),open:'Open in Messages',sameTab:true};
+  }
+}
+function copyText(text){return new Promise(function(res){
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){res(true)},function(){res(fallback())});}
+  else res(fallback());
+  function fallback(){try{var s=document.createElement('textarea');s.value=text;s.setAttribute('readonly','');s.style.position='fixed';s.style.opacity='0';document.body.appendChild(s);s.select();var ok=document.execCommand('copy');document.body.removeChild(s);return ok;}catch(e){return false;}}
+});}
+Object.keys(T).forEach(function(id){
+  var host=document.getElementById(id);if(!host)return;
+  var t=T[id],isAsk=id.indexOf('ask')===0,cur='x';
+  var card=document.createElement('div');card.className='sharecard';
+  var lab=document.createElement('div');lab.className='sc-lab';lab.textContent=(isAsk?'Share this ask':'Share this question')+' — text sized for each platform';card.appendChild(lab);
+  var tabs=document.createElement('div');tabs.className='sc-tabs';tabs.setAttribute('role','tablist');card.appendChild(tabs);
+  var body=document.createElement('div');body.className='sc-body';body.setAttribute('role','tabpanel');card.appendChild(body);
+  var acts=document.createElement('div');acts.className='sc-actions';card.appendChild(acts);
+  var hint=document.createElement('p');hint.className='sc-hint';card.appendChild(hint);
+  PLATFORMS.forEach(function(p){
+    var b=document.createElement('button');b.type='button';b.textContent=p.label;b.setAttribute('role','tab');
+    b.addEventListener('click',function(){cur=p.k;update();});tabs.appendChild(b);b.dataset.k=p.k;
+  });
+  function update(){
+    var text=bodyFor(t,cur),a=actionFor(t,cur);
+    tabs.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.k===cur?'true':'false');});
+    body.textContent=text;
+    acts.innerHTML='';
+    var cp=document.createElement('button');cp.type='button';cp.className='sc-copy';cp.textContent='Copy text';
+    cp.addEventListener('click',function(){copyText(text).then(function(ok){cp.textContent=ok?'Copied ✓':'Copy failed — select the text above';setTimeout(function(){cp.textContent='Copy text';},2000);});});
+    acts.appendChild(cp);
+    if(a.href){var an=document.createElement('a');an.className='sc-open';an.href=a.href;an.textContent=a.open;if(!a.sameTab){an.target='_blank';an.rel='noopener';}acts.appendChild(an);}
+    if(typeof navigator.share==='function'){var ns=document.createElement('button');ns.type='button';ns.className='sc-native';ns.textContent='Share from this device';
+      ns.addEventListener('click',function(){navigator.share({title:'The Platner Record',text:bodyFor(t,'sms').replace(/\{\{url\}\}/g,'').trim(),url:SC_BASE+t.anchor}).catch(function(){});});
+      acts.appendChild(ns);}
+    var ct=document.createElement('span');ct.className='sc-count';ct.textContent=text.length+' chars';acts.appendChild(ct);
+    hint.textContent=a.hint||'';hint.style.display=a.hint?'':'none';
+  }
+  update();
+  host.appendChild(card);
+});
+})();
+</script>
 <script>
 // share-kit preview lightbox (same method as the money page)
 (function(){
