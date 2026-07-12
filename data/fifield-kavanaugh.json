@@ -112,13 +112,13 @@
     {
       "n": 10, "date": "2018-09-24", "time": "18:20 UTC (2:20 p.m. EDT)", "type": "Original standalone tweet (live page shows no reply context)",
       "text": "If this grotesque circus thrust upon us by @SenateDems and their craven allies in the media teaches us nothing at all, can it PLEASE open up a conversation about how we share screenshots of text/emails/statements? Some of y'all need Jesus.",
-      "context": "Owner-flagged status recovered from the LIVE post on X, read 2026-07-11 — the only recovery path left after the Wayback Machine came up empty and the provided archive links resolved to other tweets. This is the one item still needing an archival snapshot; until then the entry depends on the post staying up.",
+      "context": "Owner-flagged status first recovered from the LIVE post on X (read 2026-07-11) after the Wayback Machine came up empty; the owner captured an archive.today snapshot the same day and confirmed on 2026-07-12 that it shows this exact tweet. The entry no longer depends on the post staying up.",
       "status_url": "https://x.com/lyndseyfifield/status/1044290567608389637",
       "live_status": "live on X — checked 2026-07-11",
       "archive_today": ["https://archive.ph/8I3iQ"],
-      "archive_note": "Snapshot owner-captured 2026-07-11; not yet independently read (archive.today CAPTCHA-blocked the verification session), so the link-to-tweet mapping awaits a one-glance confirmation. Text above was read from the live post.",
+      "archive_note": "Snapshot owner-captured 2026-07-11; content confirmed against the tweet by the owner 2026-07-12 (text and 18:20 UTC timestamp match).",
       "evidence": [],
-      "grade": "VERBATIM-LIVE", "owner_pick": true,
+      "grade": "VERBATIM-ARCHIVED", "owner_pick": true,
       "analysis": {
         "about": "Posted mid-afternoon amid the Sept 24 exchanges. The frame is the confirmation fight ('this grotesque circus thrust upon us by @SenateDems and their craven allies in the media'); the surface subject is a complaint about how people were sharing screenshots of texts, emails, and statements — a day when statements and purported evidence circulated widely as screenshots. 'Some of y'all need Jesus' is joking exasperation.",
         "purpose": "A wry aside layered on her underlying position: the literal ask is about screenshot-sharing habits, while the framing restates who she holds responsible for the 'circus' — Senate Democrats and the media.",
@@ -246,7 +246,7 @@
     "Coverage is capture-limited: the Wayback Machine has no snapshot of her profile timeline between Apr 2, 2018 and 2019; only 38 individual Sept–Oct 2018 statuses were ever archived. This ledger is what survives in archives, not a complete inventory.",
     "Live status was checked on X on 2026-07-11 for seven items: items 5, 6, 7, 9, 10, and 11 remain live; item 17 returns a 404 on a live, public account — deleted or removed, with the when and by whom not determinable from outside. The remaining items' live status is unchecked.",
     "Two Kavanaugh-window statuses are unrecoverable: Sept 26, 2018 (eve of the Ford hearing) and Oct 9, 2018 — topics unknown, not included.",
-    "Item 10 (status 1044290567608389637) was recovered from the live post on 2026-07-11 but still has no archival copy — no Wayback capture and no archive.today snapshot. It is the one ledger item whose evidence depends on the post staying up; snapshotting it is the highest-priority preservation task.",
+    "All five owner-picked items now carry archive.today snapshots. Item 10's (archive.ph/8I3iQ) was owner-captured 2026-07-11 and content-confirmed by the owner 2026-07-12, closing the last preservation gap among the picks.",
     "Item 1's retweet text is truncated at 140 characters in the archive; item 4 begins 'Also,' implying a preceding post not found in any archive.",
     "No 2026 direct response from Fifield on the Kavanaugh comparison was located; if she addresses it later, this page should be updated.",
     "Beyond the NY Post description and her quoted founding statement, no separate 2018 statements, letters, or websites of 'Ladies for Kavanaugh' were located in this pass."
