@@ -105,6 +105,12 @@ header.hero{padding:34px 0 30px}
 ul.gaps{margin:12px 0;padding-left:20px;max-width:80ch}
 ul.gaps li{margin:7px 0;font-size:14px;color:var(--muted)}
 footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px;font-size:13px;color:var(--muted)}
+.embed{margin:2px 18px 14px}
+.embed iframe{width:100%;height:560px;border:1px solid var(--hair);border-radius:4px;background:#fff}
+.embed .em-lab{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.embed .twitter-tweet{margin:0 auto}
+.embedbtn{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;cursor:pointer;color:var(--accent);background:var(--surface);border:1px dashed var(--accent);border-radius:4px;padding:9px 14px;width:100%;text-align:left}
+.embedbtn:hover{background:var(--accent-soft,#EAF0F4)}
 </style>
 </head>
 <body>
@@ -191,6 +197,18 @@ footer.site{border-top:1px solid var(--hair);margin-top:56px;padding:24px 0 70px
 <script>
 const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;");
 const GTAG = {"VERBATIM-ARCHIVED":"good","VERBATIM-QUOTED":"acc","REPORTED":"warn","PENDING-TRANSCRIPTION":"warn","VERBATIM-LIVE":"good"};
+const DARKMODE = matchMedia("(prefers-color-scheme: dark)").matches;
+// Embed priority: live post on X > this repo's own preservation copy > Wayback capture (click-to-load).
+const embedHtml = it => {
+  if(it.live_status && it.live_status.startsWith("live") && /\/status\//.test(it.status_url||"")){
+    return `<div class="embed"><div class="em-lab">Embedded live from X — if this ever fails to load, the archive links below are the record</div><blockquote class="twitter-tweet" data-dnt="true" data-theme="${DARKMODE?"dark":"light"}"><a href="${esc(it.status_url)}">View the live post on X</a></blockquote></div>`;
+  }
+  const local = (it.evidence||[]).find(e=>/^documents\//.test(e.url||""));
+  if(local) return `<div class="embed"><div class="em-lab">Embedded: this repo's own preservation copy of the Wayback capture</div><iframe src="${esc(local.url)}" loading="lazy" title="Preserved archive capture of item ${it.n}"></iframe></div>`;
+  const wb = (it.evidence||[]).find(e=>/web\.archive\.org/.test(e.url||""));
+  if(wb) return `<div class="embed"><button type="button" class="embedbtn" data-src="${esc(wb.url)}" data-n="${it.n}">▶ Load archived capture in place — ${esc(wb.label)}</button></div>`;
+  return "";
+};
 fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
   document.getElementById("keydates").textContent = "2018 reference dates: " + D.key_dates_2018 + ".";  document.getElementById("items-out").innerHTML = D.items.map(it=>`
     <div class="item${it.featured?" featured":""}">
@@ -204,6 +222,7 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
       </header>
       ${it.text!==null?`<blockquote>${esc(it.text)}</blockquote>`:`<blockquote class="pend">[ Text pending transcription — the owner-captured archive snapshot below is the only known copy; open it to read the post. ]</blockquote>`}
       <div class="ctx">${esc(it.context)}</div>
+      ${embedHtml(it)}
       <div class="links">
         <a href="${esc(it.status_url)}">original post ↗</a>
         ${(it.evidence||[]).map(e=>`<a href="${esc(e.url)}">${esc(e.label)} ↗</a>`).join("")}
@@ -212,6 +231,19 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
       ${(it.thread||[]).length?`<div class="thread"><div class="th-lab">The ensuing conversation, from the same archived page</div>${it.thread.map(t=>`<div class="titem${t.hers?" hers":""}"><div class="who">${esc(t.who)}</div><blockquote>${esc(t.text)}</blockquote></div>`).join("")}</div>`:""}
       ${it.analysis?`<div class="interp" style="margin:0 18px 16px"><div class="lab">Interpretive — descriptive analysis, not a value judgment · confidence: ${esc(it.analysis.confidence)}</div><p><b>What it's about:</b> ${esc(it.analysis.about)}</p><p><b>Purpose / intended message (as best read):</b> ${esc(it.analysis.purpose)}</p>${it.analysis.posture_and_position?`<p><b>Posture and actual position:</b> ${esc(it.analysis.posture_and_position)}</p>`:""}</div>`:""}
     </div>`).join("");
+  // Click-to-load for Wayback iframes (kept lazy: 10 auto-loading archive.org frames would crush the page)
+  document.getElementById("items-out").addEventListener("click",ev=>{
+    const b = ev.target.closest(".embedbtn"); if(!b) return;
+    const f = document.createElement("iframe");
+    f.src = b.dataset.src; f.loading = "lazy"; f.title = "Archived capture of item " + b.dataset.n;
+    b.replaceWith(f);
+  });
+  // Hydrate X embeds only if any live posts rendered
+  if(document.querySelector(".twitter-tweet")){
+    const s = document.createElement("script");
+    s.src = "https://platform.twitter.com/widgets.js"; s.async = true; s.charset = "utf-8";
+    document.body.appendChild(s);
+  }
   if(D.posture_analysis){
     const P = D.posture_analysis;
     document.getElementById("posture-out").innerHTML = `
@@ -239,6 +271,8 @@ fetch("data/fifield-kavanaugh.json").then(r=>r.json()).then(D=>{
     document.body.classList.add('anim');
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.item,.qitem').forEach(el=>io.observe(el));
+    // Failsafe: if the observer never fires (blocked/unsupported), reveal everything rather than show a blank ledger
+    setTimeout(()=>{if(!document.querySelector('.item.in'))document.body.classList.remove('anim')},1200);
   }
 }).catch(()=>{
   document.getElementById("items-out").innerHTML = '<p class="note">Could not load data/fifield-kavanaugh.json — serve this page over HTTP or view the published site.</p>';

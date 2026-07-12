@@ -1,8 +1,8 @@
 {
   "file": "og-1200x630.png",
   "title": "The Platner Record — 156,084 → 31 days → 0",
-  "description": "OG card for the main record page: 156,084 votes (June 9, 2026), 31 days to withdrawal, 0 verification boxes checked — with the amber unchecked-box motif.",
-  "alt_text": "Dark card titled “The whole case, in the public record.” Three large figures with arrows between them: 156,084 votes, June 9 2026, most in Maine Dem Senate primary history; 31 days from that win to his withdrawal, denying everything; 0 verification boxes checked — no charge or finding, either way — with an amber unchecked box beside the zero.",
+  "description": "OG card: 156,084 votes; 31 days to Platner’s withdrawal, denying every allegation; allegations independently verified: 0, either way — with the amber box motif.",
+  "alt_text": "Dark card titled “The whole case, in the public record.” Three figures with arrows: 156,084 votes June 9 2026; 31 days from that win to Platner’s withdrawal, denying every allegation; 0 allegations independently verified — no charge, no court finding, either way — with an amber unchecked box beside the zero.",
   "width_px": 1200,
   "height_px": 630,
   "format": "PNG",
@@ -18,8 +18,8 @@
     "The Platner Record",
     "Maine Senate 2026",
     "verification ledger",
-    "declared standpoint",
-    "documentation project"
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
   ],
-  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+  "usage_note": "Social card for The Platner Record. Figures and claims from the site’s sourced ledgers; attribution embedded in the PNG as tEXt chunks."
 }

@@ -1,8 +1,8 @@
 {
   "file": "x-1600x900.png",
   "title": "156,084 — 31 days later: 0",
-  "description": "X/Twitter card: the mandate figure in cream over “31 days later: 0” in dusty red, with the unchecked-box motif.",
-  "alt_text": "Dark landscape card. Huge cream figure 156,084 — votes, June 9 2026, the largest Dem Senate primary vote in Maine history. Below in dusty red: 31 days later: 0 — withdrawn July 8, denying every allegation. Verification boxes checked, in any direction: an empty amber box.",
+  "description": "X card: the mandate figure over “31 days later: 0”; Platner withdrew July 8 denying every allegation; allegations independently verified, either way: empty box.",
+  "alt_text": "Dark landscape card. Huge cream 156,084 — votes, June 9 2026, largest Dem Senate primary vote in Maine history. In dusty red: 31 days later: 0 — Platner withdrew July 8, denying every allegation. Allegations independently verified, either way: an empty amber box.",
   "width_px": 1600,
   "height_px": 900,
   "format": "PNG",
@@ -18,8 +18,8 @@
     "The Platner Record",
     "Maine Senate 2026",
     "verification ledger",
-    "declared standpoint",
-    "documentation project"
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
   ],
-  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+  "usage_note": "Social card for The Platner Record. Figures and claims from the site’s sourced ledgers; attribution embedded in the PNG as tEXt chunks."
 }

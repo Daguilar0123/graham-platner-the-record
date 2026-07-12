@@ -367,6 +367,8 @@ async function boot(){
     const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
     const arm=()=>document.querySelectorAll('.alcard,.rec,.tiles,.claim,.mstone').forEach(el=>{if(!el.classList.contains('reveal')){el.classList.add('reveal');io.observe(el)}});
     arm(); window.__armReveal=arm;
+    // Failsafe: if the observer never fires (blocked/unsupported), reveal everything rather than show a blank page
+    setTimeout(()=>{if(!document.querySelector('.reveal.in'))document.body.classList.remove('anim')},1200);
   }else{window.__armReveal=()=>{};}
   let L,A,M;
   try{

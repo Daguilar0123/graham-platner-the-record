@@ -1,8 +1,8 @@
 {
   "file": "ig-1080x1350.png",
   "title": "Three waves — the timing record",
-  "description": "Instagram portrait: the three waves of negative coverage as banded cards, with his withdrawal-statement timing quote beneath.",
-  "alt_text": "Portrait dark card titled “Three waves.” Three banded cards: Wave 1, Oct–Nov 2025, Reddit posts and the tattoo, 12 stories in the heaviest month; Wave 2, May–Jun 2026, texts and dating history, the week before the June 9 primary; Wave 3, Jul 2026, the assault allegation, before the July 13 ballot deadline. Beneath, in italics: “There is a reason that this is happening now.” — his withdrawal statement.",
+  "description": "Instagram portrait: the three waves as banded cards, with the timing quote attributed to Platner’s withdrawal statement.",
+  "alt_text": "Portrait dark card titled “Three waves.” Three banded cards: Wave 1 Oct–Nov 2025 Reddit posts and the tattoo; Wave 2 May–Jun 2026 texts and dating history; Wave 3 Jul 2026 the assault allegation. Beneath: “There is a reason that this is happening now.” — Platner’s withdrawal statement, the timing claim, checked on the page.",
   "width_px": 1080,
   "height_px": 1350,
   "format": "PNG",
@@ -18,8 +18,8 @@
     "The Platner Record",
     "Maine Senate 2026",
     "verification ledger",
-    "declared standpoint",
-    "documentation project"
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
   ],
-  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+  "usage_note": "Social card for The Platner Record. Figures and claims from the site’s sourced ledgers; attribution embedded in the PNG as tEXt chunks."
 }

@@ -1,8 +1,8 @@
 {
   "file": "ig-1080x1080.png",
-  "title": "Every box is unchecked",
-  "description": "Instagram square: a giant amber unchecked verification box — the site’s central visual argument.",
-  "alt_text": "Square dark card titled “Every allegation carries a verification box.” A giant empty amber square dominates the center. Below, in amber italics: Every box is unchecked. Then: no charge, no court finding, no independent verification — in any direction, as of Jul 11 2026. Allegations as allegations. Denials as denials.",
+  "title": "Every allegation gets asked one question",
+  "description": "Instagram square: large amber box beside CHARGED? COURT FINDING? INDEPENDENTLY VERIFIED? — closing line “Allegations written as allegations. Denials written as denials.”",
+  "alt_text": "Square dark card: “Every allegation on this record gets asked one question:” A large empty amber box beside charged? court finding? independently verified? Amber italic: As of July 11, 2026: the box is empty. Closing: Allegations written as allegations. Denials written as denials.",
   "width_px": 1080,
   "height_px": 1080,
   "format": "PNG",
@@ -16,10 +16,8 @@
   "keywords": [
     "Graham Platner",
     "The Platner Record",
-    "Maine Senate 2026",
-    "verification ledger",
-    "declared standpoint",
-    "documentation project"
+    "Maine Senate 2026"
   ],
-  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+  "usage_note": "Vector master (.svg) provided alongside the PNG render — edit the SVG directly for quick adjustments.",
+  "vector_master": "ig-1080x1080.svg"
 }

@@ -1,8 +1,8 @@
 {
   "file": "og-1200x630-questions.png",
-  "title": "Why is no one calling for an investigation? — editorial card",
-  "description": "OG card for the editorial page: the headline question with an amber COMMENTARY — CLEARLY LABELED box and the falsifiability framing.",
-  "alt_text": "Dark card with large serif text: “Why is no one calling for an investigation?” An amber-outlined box reads COMMENTARY — CLEARLY LABELED: if the corroborating evidence is as strong as claimed, it can withstand the one process built to test it. Below: Q1, Q2, Q3 — and what would change this page.",
+  "title": "Why is no one calling for an investigation? — series cover",
+  "description": "Three-part series cover. Part 3 line: take the claims at full strength — then charging is the state’s duty. So why the silence?",
+  "alt_text": "Dark card: Why is no one calling for an investigation? — editorial, a three-part series. Part 1: every statement demanded Platner’s withdrawal, zero demanded an investigation. Part 2: “we reviewed the evidence” should begin the inquiry, not end it. Part 3: take the claims at full strength — then charging is the state’s duty. So why the silence?",
   "width_px": 1200,
   "height_px": 630,
   "format": "PNG",
@@ -16,10 +16,8 @@
   "keywords": [
     "Graham Platner",
     "The Platner Record",
-    "Maine Senate 2026",
-    "verification ledger",
-    "declared standpoint",
-    "documentation project"
+    "Maine Senate 2026"
   ],
-  "usage_note": "Social card for The Platner Record documentation site. Restrained archival styling; figures from official Maine SOS results and the site’s sourced ledgers. Attribution metadata is also embedded in the PNG as tEXt chunks (Author, Copyright, Title, Description)."
+  "usage_note": "Vector master (.svg) provided alongside the PNG render — edit the SVG directly for quick adjustments.",
+  "vector_master": "og-1200x630-questions.svg"
 }

@@ -1,8 +1,8 @@
 {
   "file": "waves-teaser-animated.gif",
   "title": "Three waves — animated timing record",
-  "description": "Looping teaser: three wave bands slide in — Oct–Nov 2025 Reddit posts & the tattoo; May–Jun 2026 texts & dating history before the primary; Jul 2026 the assault allegation before July 13 — ending on his withdrawal-statement quote.",
-  "alt_text": "Animation titled “Three waves.” Three cards slide in one after another: Wave 1, Oct–Nov 2025, Reddit posts and the tattoo; Wave 2, May–Jun 2026, texts and dating history before the primary; Wave 3, Jul 2026, the assault allegation before July 13. Ends with the quote: There is a reason that this is happening now — his withdrawal statement.",
+  "description": "Looping teaser: three wave bands slide in, ending on the timing quote attributed to Platner’s withdrawal statement.",
+  "alt_text": "Animation titled “Three waves.” Three cards slide in: Wave 1 Oct–Nov 2025 Reddit posts and the tattoo; Wave 2 May–Jun 2026 texts and dating history before the primary; Wave 3 Jul 2026 the assault allegation before July 13. Ends: “There is a reason that this is happening now.” — Platner’s withdrawal statement.",
   "width_px": 640,
   "height_px": 640,
   "format": "GIF (animated, loops)",
@@ -18,7 +18,8 @@
     "The Platner Record",
     "Maine Senate 2026",
     "verification ledger",
-    "animated teaser"
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
   ],
-  "usage_note": "Animated GIF teaser in the site’s restrained archival voice. Copyright/attribution is embedded in the GIF as a comment block. First frame is partial by design — pair with a static card where platforms preview frame 1."
+  "usage_note": "Animated GIF teaser. Copyright embedded as GIF comment block. First frame partial by design — pair with a static card where frame 1 is the preview."
 }

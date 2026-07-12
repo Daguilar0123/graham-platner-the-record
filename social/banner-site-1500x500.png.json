@@ -1,0 +1,23 @@
+{
+  "file": "banner-site-1500x500.png",
+  "title": "The Platner Record — site banner",
+  "description": "Site-promotion banner: “The Platner Record” with the tagline “Every quote verbatim. Every claim sourced. Every gap declared.” and four section chips — The Record, The Fifield–Kavanaugh File, The Questions, The Money.",
+  "alt_text": "Wide dark banner. Amber kicker: a documentation project, Maine U.S. Senate 2026. Large serif title: The Platner Record. Italic tagline: Every quote verbatim. Every claim sourced. Every gap declared. Four navigation chips: The Record, The Fifield–Kavanaugh File, The Questions, The Money. Footer: no conclusions — a record you can check.",
+  "width_px": 1500,
+  "height_px": 500,
+  "format": "PNG",
+  "creator": "Daniel Ismael Aguilar",
+  "creator_url": "https://grownfromconcrete.org",
+  "copyright": "© 2026 Daniel Ismael Aguilar",
+  "credit": "Daniel Ismael Aguilar · grownfromconcrete.org",
+  "copyright_year": 2026,
+  "date_created": "2026-07-12",
+  "source_page": "https://daguilar0123.github.io/graham-platner-the-record/",
+  "keywords": [
+    "Graham Platner",
+    "The Platner Record",
+    "Maine Senate 2026"
+  ],
+  "usage_note": "Vector master (.svg) provided alongside the PNG render — edit the SVG directly for quick adjustments.",
+  "vector_master": "banner-site-1500x500.svg"
+}

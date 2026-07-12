@@ -1,8 +1,8 @@
 {
   "file": "mandate-teaser-animated.gif",
   "title": "156,084 → 31 days later: 0 — animated counter",
-  "description": "Looping teaser: a counter races from 0 to 156,084 (votes, June 9, 2026), then “31 days later: 0” fades in with an empty verification box after “BOXES CHECKED:”.",
-  "alt_text": "Animation: a large number counts up rapidly to 156,084, labeled votes, June 9 2026, the most in Maine Dem Senate primary history. Then in dusty red: 31 days later: 0 — withdrawn July 8, denying everything. Boxes checked: an empty amber square.",
+  "description": "Looping teaser: counter races to 156,084, then “31 days later: 0” — Platner withdrew July 8 denying every allegation; allegations independently verified, either way: empty box.",
+  "alt_text": "Animation: a number counts up to 156,084, votes, June 9 2026. Then in dusty red: 31 days later: 0 — Platner withdrew July 8, denying every allegation. Allegations independently verified, either way: an empty amber box.",
   "width_px": 640,
   "height_px": 640,
   "format": "GIF (animated, loops)",
@@ -18,7 +18,8 @@
     "The Platner Record",
     "Maine Senate 2026",
     "verification ledger",
-    "animated teaser"
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
   ],
-  "usage_note": "Animated GIF teaser in the site’s restrained archival voice. Copyright/attribution is embedded in the GIF as a comment block. First frame is partial by design — pair with a static card where platforms preview frame 1."
+  "usage_note": "Animated GIF teaser. Copyright embedded as GIF comment block. First frame partial by design — pair with a static card where frame 1 is the preview."
 }

@@ -27,3 +27,34 @@ For fuller EXIF/XMP/IPTC embedding (per HANDOFF.md §5), run exiftool with the s
 | waves-teaser-animated.gif | three wave bands → the timing quote | waves-teaser-animated.gif.json |
 
 Each GIF carries an embedded comment block: “(c) 2026 Daniel Ismael Aguilar - https://grownfromconcrete.org - The Platner Record”. 640×640, infinite loop.
+
+## YouTube thumbnails (added 2026-07-12)
+
+| Image | Argument | Sidecar |
+|---|---|---|
+| yt-thumb-demanded-1280x720.png | Q1 — withdrawal demanded, investigation never | yt-thumb-demanded-1280x720.png.json |
+| yt-thumb-evidence-1280x720.png | Q2 — “reviewed the evidence” vs testing it | yt-thumb-evidence-1280x720.png.json |
+
+## Revision 2026-07-12 (clarity pass)
+
+- All “his” attributions now use Platner’s name; “verification boxes” language replaced with the explicit question “CHARGED? COURT FINDING? INDEPENDENTLY VERIFIED?”
+- boxes-teaser-animated.gif rebuilt as a ledger (5 allegations, 2 named accusers) to prevent the “five accusers” misread.
+- og-1200x630-fifield.png adds the method line (automated archive sweep, human-checked).
+- NEW three-part series: questions-part1/2/3-1200x630.png + og-1200x630-questions.png as series cover. Part 3 cites 17-A M.R.S. §8(2-A) (20 years, clock to ~2041).
+
+## Revision 2026-07-12b (marketing pass)
+
+- NEW banner-site-1500x500 (site-promotion banner; also fits X/Twitter header).
+- NEW the-money-1200x630 (contrast card linking the campaign-finance ledger).
+- Vector masters: every card revised in this pass ships as .svg next to its .png — edit the SVG, not the PNG. Photo composites (yt-thumb-*) and GIFs are raster-only.
+- boxes-teaser-animated.gif reworded — allegation specifics removed from marketing copy.
+- questions-part3 + series cover: 2041 framing removed, replaced with the “then charge him” argument.
+- og-1200x630-fifield: explicit 2018-vs-2026 contrast, “We have the receipts.”
+- ig-1080x1080 closing line: “Allegations written as allegations. Denials written as denials.”
+
+## Revision 2026-07-12c (final metadata pass)
+
+- SVG masters now exist for EVERY still card (11 .svg files). yt-thumb-* are photo composites (raster-only); GIFs are raster by format.
+- Every PNG carries embedded tEXt: Title, Description, Alt, Author, Copyright (+attribution URL), Keywords (SEO), Software.
+- Every SVG carries <title>, <desc> (alt text), and an RDF/Dublin Core metadata block (creator, rights, subject keywords, date, source).
+- Banner footer now reads “draw your own conclusions · our bias made clear”.

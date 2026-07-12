@@ -1,0 +1,25 @@
+{
+  "file": "questions-part2-1200x630.png",
+  "title": "Part 2 — reviewed is not tested",
+  "description": "Series Part 2: what a newsroom can do (screenshots and emails, not the direct messages) vs what only an investigation can do (warrants, chain of custody, metadata).",
+  "alt_text": "Dark card, part 2 of 3. “Reporters reviewed the evidence.” That ends the inquiry — it should begin it. Green box: what a newsroom can do — read screenshots and emails; by their own account they could not review the direct messages. Amber box: what only an investigation can do — phone data, app records, message metadata, under warrant and chain of custody. Amber italic: digital evidence is testable — that is the point of it.",
+  "width_px": 1200,
+  "height_px": 630,
+  "format": "PNG",
+  "creator": "Daniel Ismael Aguilar",
+  "creator_url": "https://grownfromconcrete.org",
+  "copyright": "© 2026 Daniel Ismael Aguilar",
+  "credit": "Daniel Ismael Aguilar · grownfromconcrete.org",
+  "copyright_year": 2026,
+  "date_created": "2026-07-12",
+  "source_page": "https://daguilar0123.github.io/graham-platner-the-record/",
+  "keywords": [
+    "Graham Platner",
+    "The Platner Record",
+    "Maine Senate 2026",
+    "verification ledger",
+    "investigation",
+    "17-A M.R.S. §8(2-A)"
+  ],
+  "usage_note": "Social card for The Platner Record. Figures and claims from the site’s sourced ledgers; attribution embedded in the PNG as tEXt chunks."
+}
