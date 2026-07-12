@@ -30,6 +30,14 @@ adjudication exists anywhere in this record.
 - `data/milestones.json` — campaign milestones, monthly stories-vs-spending overlay, official primary results
 - `documents/` — vetted public-record documents, each with a provenance note
 
+## Documentation
+
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** — how the whole system is built and *why* (the
+  two-repo topology, the content-as-data spine, the render pipeline, the trust pipeline).
+- **[docs/adr/](docs/adr/)** — Architecture Decision Records: the "why" behind each major choice.
+- **[CLAUDE.md](CLAUDE.md)** — operating rules for AI agents working in this repo.
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** — how to submit documents and corrections.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Short version: free GitHub account,
