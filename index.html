@@ -73,6 +73,33 @@ blockquote.pull::before{content:"“";position:absolute;left:0;top:-8px;font-fam
 .funnel b{font-family:var(--serif);font-weight:400;font-size:17px;display:block;margin-bottom:6px}
 .funnel span{font-size:13px;color:var(--muted);line-height:1.5;display:block}
 @media(max-width:640px){.funnel{grid-template-columns:1fr}}
+/* ——— share kit (same method as the money page) ——— */
+.sharekit{border:1px solid var(--hair);border-radius:4px;background:var(--surface);padding:18px 20px;margin:20px 0}
+.sharekit h3{margin:0 0 4px}
+.sharekit .sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:16px}
+.sk-item{display:flex;flex-direction:column;gap:8px;border:1px solid var(--hair);border-radius:4px;padding:10px;background:var(--ground)}
+.sk-thumb{position:relative;display:block;width:100%;height:120px;padding:0;border:1px solid var(--hair);border-radius:3px;background:repeating-conic-gradient(var(--neu-soft) 0% 25%,transparent 0% 50%) 0 0/16px 16px,var(--surface);cursor:zoom-in;overflow:hidden}
+.sk-thumb img{width:100%;height:100%;object-fit:contain;padding:6px;display:block}
+.sk-thumb .ptag{position:absolute;inset:auto 6px 6px auto;font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,0,0,.6);color:#fff;padding:2px 6px;border-radius:20px;opacity:0;transition:opacity .15s}
+.sk-thumb:hover .ptag,.sk-thumb:focus-visible .ptag{opacity:1}
+.sk-thumb .gifbadge{position:absolute;inset:6px auto auto 6px;font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;background:var(--bad);color:#fff;padding:2px 6px;border-radius:20px}
+.sk-meta{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.sk-item .skname{font-family:var(--mono);font-size:10.5px;color:var(--ink);letter-spacing:.02em;font-weight:600}
+.sk-item .skdim{font-family:var(--mono);font-size:9.5px;color:var(--muted)}
+.sk-item a.skdl{font-family:var(--mono);font-size:11px;font-weight:600;text-align:center;padding:7px;border:1px solid var(--accent);border-radius:3px;color:var(--accent);text-decoration:none}
+.sk-item a.skdl:hover{background:var(--accent);color:var(--ground)}
+dialog.lbox{border:none;border-radius:6px;background:var(--surface);color:var(--ink);max-width:min(920px,94vw);max-height:94vh;padding:0;overflow:hidden}
+dialog.lbox::backdrop{background:rgba(8,10,12,.78);backdrop-filter:blur(3px)}
+.lb-head{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--hair)}
+.lb-head .lb-t{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.lb-close{font:inherit;background:none;border:1px solid var(--hair);border-radius:3px;color:var(--muted);cursor:pointer;padding:5px 11px}
+.lb-close:hover{color:var(--ink);border-color:var(--muted)}
+.lb-stage{padding:16px;overflow:auto;max-height:calc(94vh - 128px);text-align:center;background:repeating-conic-gradient(var(--neu-soft) 0% 25%,transparent 0% 50%) 0 0/22px 22px,var(--ground)}
+.lb-stage img{max-width:100%;height:auto;border-radius:3px;box-shadow:0 6px 30px rgba(0,0,0,.3)}
+.lb-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 18px;border-top:1px solid var(--hair);flex-wrap:wrap}
+.lb-foot .lb-cap{font-size:12px;color:var(--muted);max-width:60ch;text-align:left}
+.lb-dl{font-family:var(--mono);font-size:12px;font-weight:600;padding:9px 18px;background:var(--accent);color:var(--ground);border-radius:3px;text-decoration:none;white-space:nowrap}
+.lb-dl:hover{opacity:.9;color:var(--ground)}
 footer.site{border-top:1px solid var(--hair);margin-top:60px;padding:24px 0 70px;font-size:13px;color:var(--muted)}
 </style>
 </head>
@@ -331,6 +358,151 @@ imprisonment in the same type size it used to question his accusers' coverage. A
 investigation finds the allegations unsupported, this page will not gloat; it will simply check the boxes the
 other way and let the record speak. That is what it means to want the truth more than a result.</p>
 
+<section class="sharekit" id="share-kit">
+  <h3 style="font-family:var(--serif);font-weight:400;font-size:clamp(18px,2.6vw,22px)">Share the case</h3>
+  <p class="note">A hub to load up on material. Every graphic is built from the sourced record documented on these
+  pages and free to repost — no permission needed. Click a thumbnail to preview it full-size, then download; or grab
+  it straight from the button. Credit (© 2026 Daniel Ismael Aguilar · grownfromconcrete.org) travels embedded in
+  every file. The animated GIFs build from an empty first frame — on platforms that use frame 1 as the preview,
+  pair them with a static card.</p>
+  <div class="sk-grid">
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/og-1200x630.png" data-title="record card · 1200×630 PNG" data-dl="social/og-1200x630.png" data-cap="The summary card: 156,084 votes, 31 days to withdrawal, 0 allegations independently verified — no charge or court finding, either way. Correct shape for a link preview." aria-label="Preview the record summary card full-size">
+        <img src="social/og-1200x630.png" width="1200" height="630" loading="lazy" alt="Summary card: 156,084 votes, 31 days, 0 verified — with an amber unchecked box.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">record card</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/og-1200x630.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/og-1200x630-questions.png" data-title="questions cover · 1200×630 PNG" data-dl="social/og-1200x630-questions.png" data-cap="Series cover for the editorial: why is no one calling for an investigation? Link-preview shape." aria-label="Preview the questions series cover full-size">
+        <img src="social/og-1200x630-questions.png" width="1200" height="630" loading="lazy" alt="Editorial cover card: why is no one calling for an investigation?">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">questions cover</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/og-1200x630-questions.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/questions-part1-1200x630.png" data-title="questions, part 1 · 1200×630 PNG" data-dl="social/questions-part1-1200x630.png" data-cap="Part 1 of the three-card series — they called for withdrawal, never an investigation." aria-label="Preview questions part 1 full-size">
+        <img src="social/questions-part1-1200x630.png" width="1200" height="630" loading="lazy" alt="Series card, part 1: they called for withdrawal, never an investigation.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">questions, part 1</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/questions-part1-1200x630.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/questions-part2-1200x630.png" data-title="questions, part 2 · 1200×630 PNG" data-dl="social/questions-part2-1200x630.png" data-cap="Part 2 — &ldquo;reviewed&rdquo; is not &ldquo;tested&rdquo;: what reporters had vs what no one has asked for." aria-label="Preview questions part 2 full-size">
+        <img src="social/questions-part2-1200x630.png" width="1200" height="630" loading="lazy" alt="Series card, part 2: reviewed is not tested.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">questions, part 2</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/questions-part2-1200x630.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/questions-part3-1200x630.png" data-title="questions, part 3 · 1200×630 PNG" data-dl="social/questions-part3-1200x630.png" data-cap="Part 3 — if the evidence is what they say it is, then charge him. Maine law allows it." aria-label="Preview questions part 3 full-size">
+        <img src="social/questions-part3-1200x630.png" width="1200" height="630" loading="lazy" alt="Series card, part 3: then charge him.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">questions, part 3</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/questions-part3-1200x630.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/og-1200x630-fifield.png" data-title="fifield file card · 1200×630 PNG" data-dl="social/og-1200x630-fifield.png" data-cap="The Fifield–Kavanaugh File: 2018 vs 2026 — every quote archived, dated, graded. &ldquo;We have the receipts.&rdquo;" aria-label="Preview the Fifield file card full-size">
+        <img src="social/og-1200x630-fifield.png" width="1200" height="630" loading="lazy" alt="Fifield–Kavanaugh File card: 2018 vs 2026, we have the receipts.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">fifield file card</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/og-1200x630-fifield.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/the-money-1200x630.png" data-title="money card · 1200×630 PNG" data-dl="social/the-money-1200x630.png" data-cap="&ldquo;The spending is public. The source isn't.&rdquo; The contrast card pointing to the campaign-finance ledger." aria-label="Preview the money contrast card full-size">
+        <img src="social/the-money-1200x630.png" width="1200" height="630" loading="lazy" alt="Money contrast card: the spending is public, the source isn't.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">money card</span><span class="skdim">1200×630</span></div>
+      <a class="skdl" href="social/the-money-1200x630.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/x-1600x900.png" data-title="X card · 1600×900 PNG" data-dl="social/x-1600x900.png" data-cap="156,084 — 31 days later: 0. Sized for an X/Twitter post image." aria-label="Preview the X card full-size">
+        <img src="social/x-1600x900.png" width="1600" height="900" loading="lazy" alt="X post card: 156,084 — 31 days later: 0.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">X card</span><span class="skdim">1600×900</span></div>
+      <a class="skdl" href="social/x-1600x900.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/ig-1080x1080.png" data-title="IG square · 1080×1080 PNG" data-dl="social/ig-1080x1080.png" data-cap="Every allegation gets asked one question: charged? court finding? independently verified? Square — for Instagram or a link card." aria-label="Preview the Instagram square full-size">
+        <img src="social/ig-1080x1080.png" width="1080" height="1080" loading="lazy" alt="Instagram square: every allegation gets asked one question.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">IG square</span><span class="skdim">1080×1080</span></div>
+      <a class="skdl" href="social/ig-1080x1080.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/ig-1080x1350.png" data-title="IG portrait · 1080×1350 PNG" data-dl="social/ig-1080x1350.png" data-cap="Three waves — the timing record. Portrait, for Instagram." aria-label="Preview the Instagram portrait full-size">
+        <img src="social/ig-1080x1350.png" width="1080" height="1350" loading="lazy" alt="Instagram portrait: three waves, the timing record.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">IG portrait</span><span class="skdim">1080×1350</span></div>
+      <a class="skdl" href="social/ig-1080x1350.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/banner-site-1500x500.png" data-title="site banner · 1500×500 PNG" data-dl="social/banner-site-1500x500.png" data-cap="Site-promotion banner — also fits an X/Twitter profile header. &ldquo;Draw your own conclusions · our bias made clear.&rdquo;" aria-label="Preview the site banner full-size">
+        <img src="social/banner-site-1500x500.png" width="1500" height="500" loading="lazy" alt="Site banner: The Platner Record — draw your own conclusions.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">site banner</span><span class="skdim">1500×500</span></div>
+      <a class="skdl" href="social/banner-site-1500x500.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/yt-thumb-demanded-1280x720.png" data-title="YT thumb, Q1 · 1280×720 PNG" data-dl="social/yt-thumb-demanded-1280x720.png" data-cap="Thumbnail on Q1: they all demanded Platner quit — nobody demanded an investigation." aria-label="Preview the Q1 thumbnail full-size">
+        <img src="social/yt-thumb-demanded-1280x720.png" width="1280" height="720" loading="lazy" alt="Thumbnail: they all demanded Platner quit, but nobody demanded an investigation.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">YT thumb, Q1</span><span class="skdim">1280×720</span></div>
+      <a class="skdl" href="social/yt-thumb-demanded-1280x720.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/yt-thumb-evidence-1280x720.png" data-title="YT thumb, Q2 · 1280×720 PNG" data-dl="social/yt-thumb-evidence-1280x720.png" data-cap="Thumbnail on Q2: &ldquo;we reviewed the evidence.&rdquo; OK — then test it. Digital evidence is testable." aria-label="Preview the Q2 thumbnail full-size">
+        <img src="social/yt-thumb-evidence-1280x720.png" width="1280" height="720" loading="lazy" alt="Thumbnail: we reviewed the evidence — OK, then test it.">
+        <span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">YT thumb, Q2</span><span class="skdim">1280×720</span></div>
+      <a class="skdl" href="social/yt-thumb-evidence-1280x720.png" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/boxes-teaser-animated.gif" data-title="allegation ledger · animated GIF" data-dl="social/boxes-teaser-animated.gif" data-cap="Five allegations, two accusers — the animated ledger. Loops; builds from an empty first frame." aria-label="Preview the animated allegation ledger GIF full-size">
+        <img src="social/boxes-teaser-animated.gif" width="640" height="640" loading="lazy" alt="Animated ledger: five allegations, two accusers.">
+        <span class="gifbadge">GIF</span><span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">allegation ledger</span><span class="skdim">640×640</span></div>
+      <a class="skdl" href="social/boxes-teaser-animated.gif" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/mandate-teaser-animated.gif" data-title="mandate counter · animated GIF" data-dl="social/mandate-teaser-animated.gif" data-cap="156,084 → 31 days later: 0 — the animated counter. Loops." aria-label="Preview the animated mandate counter GIF full-size">
+        <img src="social/mandate-teaser-animated.gif" width="640" height="640" loading="lazy" alt="Animated counter: 156,084, then 31 days later, zero.">
+        <span class="gifbadge">GIF</span><span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">mandate counter</span><span class="skdim">640×640</span></div>
+      <a class="skdl" href="social/mandate-teaser-animated.gif" download>Download</a>
+    </div>
+    <div class="sk-item">
+      <button class="sk-thumb" data-full="social/waves-teaser-animated.gif" data-title="three waves · animated GIF" data-dl="social/waves-teaser-animated.gif" data-cap="Three waves — the animated timing record. Loops." aria-label="Preview the animated three-waves GIF full-size">
+        <img src="social/waves-teaser-animated.gif" width="640" height="640" loading="lazy" alt="Animated timing record: three waves.">
+        <span class="gifbadge">GIF</span><span class="ptag">click to preview</span>
+      </button>
+      <div class="sk-meta"><span class="skname">three waves</span><span class="skdim">640×640</span></div>
+      <a class="skdl" href="social/waves-teaser-animated.gif" download>Download</a>
+    </div>
+  </div>
+</section>
+
+<dialog class="lbox" id="lightbox" aria-label="Image preview">
+  <div class="lb-head"><span class="lb-t" id="lb-title"></span><button class="lb-close" id="lb-close">close ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" src="" alt=""></div>
+  <div class="lb-foot"><span class="lb-cap" id="lb-cap"></span><a class="lb-dl" id="lb-dl" href="" download>↓ Download</a></div>
+</dialog>
+
 <footer class="site">
   <p>Part of <a href="the-record.html">Graham Platner: The Record</a>. The documentary rules — allegations as allegations,
   denials as denials, no findings of fact — govern every page on this site; this one adds argument, clearly
@@ -345,6 +517,31 @@ other way and let the record speak. That is what it means to want the truth more
   </div>
 </footer>
 </div>
+<script>
+// share-kit preview lightbox (same method as the money page)
+(function(){
+  var lb=document.getElementById("lightbox");
+  if(lb && typeof lb.showModal==="function"){
+    var lbImg=document.getElementById("lb-img"),lbTitle=document.getElementById("lb-title"),
+        lbCap=document.getElementById("lb-cap"),lbDl=document.getElementById("lb-dl");
+    document.getElementById("lb-close").addEventListener("click",function(){lb.close()});
+    lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
+    [].slice.call(document.querySelectorAll(".sk-thumb")).forEach(function(btn){
+      btn.addEventListener("click",function(){
+        var full=btn.getAttribute("data-full");
+        lbImg.src=full;
+        lbImg.alt=(btn.querySelector("img")||{}).alt||"";
+        lbTitle.textContent=btn.getAttribute("data-title")||"";
+        lbCap.innerHTML=btn.getAttribute("data-cap")||"";
+        lbDl.href=btn.getAttribute("data-dl")||full;
+        var name=(btn.getAttribute("data-dl")||full).split("/").pop();
+        lbDl.setAttribute("download",name);
+        lb.showModal();
+      });
+    });
+  }
+})();
+</script>
 <script data-name="BMC-Widget" data-cfasync="false"
   src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
   data-id="danny.thetatteredrose"
