@@ -22,7 +22,9 @@ adjudication exists anywhere in this record.
 
 ## Structure
 
-- `index.html` — the page
+- `index.html` — The Questions: the editorial front door (commentary, clearly labeled), funneling to the documentary pages
+- `the-record.html` — the record page: his words, the verification ledger, the money summary, the catalog, the overlay, the mandate
+- `fifield-kavanaugh.html` — the Fifield–Kavanaugh documentary file
 - `data/attacks.json` — the media catalog (35 primary records + secondary list + outlet ownership)
 - `data/verification-ledger.json` — every allegation, every evidence item, provenance in the reporters' own words
 - `data/milestones.json` — campaign milestones, monthly stories-vs-spending overlay, official primary results

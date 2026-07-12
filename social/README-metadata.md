@@ -8,9 +8,9 @@ All images: © 2026 Daniel Ismael Aguilar · https://grownfromconcrete.org
 
 | Image | Page it belongs to | Title |
 |---|---|---|
-| og-1200x630.png | index.html (og:image) | The Platner Record — 156,084 → 31 days → 0 |
+| og-1200x630.png | the-record.html (og:image) | The Platner Record — 156,084 → 31 days → 0 |
 | og-1200x630-fifield.png | fifield-kavanaugh.html (og:image) | The Fifield–Kavanaugh File — archival specimen card |
-| og-1200x630-questions.png | the-questions.html (og:image) | Why is no one calling for an investigation? — editorial card |
+| og-1200x630-questions.png | index.html — site front door (og:image) | Why is no one calling for an investigation? — editorial card |
 | x-1600x900.png | any page, X/Twitter post | 156,084 — 31 days later: 0 |
 | ig-1080x1080.png | Instagram square | Every box is unchecked |
 | ig-1080x1350.png | Instagram portrait | Three waves — the timing record |
